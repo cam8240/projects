@@ -1,0 +1,132 @@
+
+====================================================================================================
+Running for parameters: {'QUEUE_DEPTH': 8, 'ROB_DEPTH': 8, 'RESERVATION_STATION_SIZE': 4, 'LS_QUEUE_DEPTH': 4}
+====================================================================================================
+IPC: 0.381500 | Delay: 4738 | Power: 15.324 | Command: make run_vcs_top_tb PROG=../testcode/coremark_im.elf
+IPC: 0.457039 | Delay: 5697 | Power: 15.455 | Command: make run_vcs_top_tb PROG=../testcode/additional_testcases/compression_im.elf
+IPC: 0.384719 | Delay: 7523 | Power: 15.260 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/mergesort.c
+IPC: 0.367980 | Delay: 8668 | Power: 15.180 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/fft.c
+IPC: 0.313435 | Delay: 12914 | Power: 15.033 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/aes_sha.c
+Total cell area:: 213264.068974 | Command: cd ../synth && make synth
+slack (MET): 0.000024 | Command: cd ../synth && make synth
+
+====================================================================================================
+Running for parameters: {'QUEUE_DEPTH': 8, 'ROB_DEPTH': 16, 'RESERVATION_STATION_SIZE': 4, 'LS_QUEUE_DEPTH': 4}
+====================================================================================================
+IPC: 0.379825 | Delay: 4759 | Power: 15.324 | Command: make run_vcs_top_tb PROG=../testcode/coremark_im.elf
+IPC: 0.457039 | Delay: 5697 | Power: 15.455 | Command: make run_vcs_top_tb PROG=../testcode/additional_testcases/compression_im.elf
+IPC: 0.380295 | Delay: 7610 | Power: 15.260 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/mergesort.c
+IPC: 0.366538 | Delay: 8702 | Power: 15.180 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/fft.c
+IPC: 0.309493 | Delay: 13079 | Power: 15.033 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/aes_sha.c
+Total cell area:: 220210.658856 | Command: cd ../synth && make synth
+slack (MET): 0.000194 | Command: cd ../synth && make synth
+
+====================================================================================================
+Running for parameters: {'QUEUE_DEPTH': 16, 'ROB_DEPTH': 8, 'RESERVATION_STATION_SIZE': 4, 'LS_QUEUE_DEPTH': 4}
+====================================================================================================
+IPC: 0.382217 | Delay: 4729 | Power: 15.324 | Command: make run_vcs_top_tb PROG=../testcode/coremark_im.elf
+IPC: 0.457039 | Delay: 5697 | Power: 15.455 | Command: make run_vcs_top_tb PROG=../testcode/additional_testcases/compression_im.elf
+IPC: 0.387694 | Delay: 7465 | Power: 15.260 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/mergesort.c
+IPC: 0.374930 | Delay: 8507 | Power: 15.180 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/fft.c
+IPC: 0.316659 | Delay: 12783 | Power: 15.033 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/aes_sha.c
+Total cell area:: 218014.031009 | Command: cd ../synth && make synth
+slack (MET): 0.000545 | Command: cd ../synth && make synth
+
+====================================================================================================
+Running for parameters: {'QUEUE_DEPTH': 16, 'ROB_DEPTH': 16, 'RESERVATION_STATION_SIZE': 4, 'LS_QUEUE_DEPTH': 4}
+====================================================================================================
+IPC: 0.380838 | Delay: 4746 | Power: 15.324 | Command: make run_vcs_top_tb PROG=../testcode/coremark_im.elf
+IPC: 0.457039 | Delay: 5697 | Power: 15.455 | Command: make run_vcs_top_tb PROG=../testcode/additional_testcases/compression_im.elf
+IPC: 0.380427 | Delay: 7607 | Power: 15.260 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/mergesort.c
+IPC: 0.383663 | Delay: 8313 | Power: 15.180 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/fft.c
+IPC: 0.313742 | Delay: 12902 | Power: 15.033 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/aes_sha.c
+Total cell area:: 224004.084941 | Command: cd ../synth && make synth
+slack (MET): 0.000137 | Command: cd ../synth && make synth
+
+====================================================================================================
+Running for parameters: {'QUEUE_DEPTH': 8, 'ROB_DEPTH': 8, 'RESERVATION_STATION_SIZE': 8, 'LS_QUEUE_DEPTH': 4}
+====================================================================================================
+IPC: 0.374892 | Delay: 4821 | Power: 15.324 | Command: make run_vcs_top_tb PROG=../testcode/coremark_im.elf
+IPC: 0.457039 | Delay: 5697 | Power: 15.455 | Command: make run_vcs_top_tb PROG=../testcode/additional_testcases/compression_im.elf
+IPC: 0.385103 | Delay: 7515 | Power: 15.260 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/mergesort.c
+IPC: 0.367448 | Delay: 8680 | Power: 15.180 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/fft.c
+IPC: 0.310830 | Delay: 13023 | Power: 15.033 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/aes_sha.c
+Total cell area:: 223572.899143 | Command: cd ../synth && make synth
+slack (MET): 0.000128 | Command: cd ../synth && make synth
+
+====================================================================================================
+Running for parameters: {'QUEUE_DEPTH': 8, 'ROB_DEPTH': 16, 'RESERVATION_STATION_SIZE': 8, 'LS_QUEUE_DEPTH': 4}
+====================================================================================================
+IPC: 0.380725 | Delay: 4748 | Power: 15.324 | Command: make run_vcs_top_tb PROG=../testcode/coremark_im.elf
+IPC: 0.457039 | Delay: 5697 | Power: 15.455 | Command: make run_vcs_top_tb PROG=../testcode/additional_testcases/compression_im.elf
+IPC: 0.385269 | Delay: 7512 | Power: 15.260 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/mergesort.c
+IPC: 0.372733 | Delay: 8557 | Power: 15.180 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/fft.c
+IPC: 0.309448 | Delay: 13081 | Power: 15.033 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/aes_sha.c
+Total cell area:: 233473.152859 | Command: cd ../synth && make synth
+slack (MET): 0.000065 | Command: cd ../synth && make synth
+
+====================================================================================================
+Running for parameters: {'QUEUE_DEPTH': 16, 'ROB_DEPTH': 16, 'RESERVATION_STATION_SIZE': 8, 'LS_QUEUE_DEPTH': 4}
+====================================================================================================
+IPC: 0.381576 | Delay: 4737 | Power: 15.324 | Command: make run_vcs_top_tb PROG=../testcode/coremark_im.elf
+IPC: 0.457039 | Delay: 5697 | Power: 15.455 | Command: make run_vcs_top_tb PROG=../testcode/additional_testcases/compression_im.elf
+IPC: 0.384948 | Delay: 7518 | Power: 15.260 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/mergesort.c
+IPC: 0.384278 | Delay: 8300 | Power: 15.180 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/fft.c
+IPC: 0.311392 | Delay: 12999 | Power: 15.033 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/aes_sha.c
+Total cell area:: 235685.209016 | Command: cd ../synth && make synth
+slack (MET): 0.001760 | Command: cd ../synth && make synth
+
+====================================================================================================
+Running for parameters: {'QUEUE_DEPTH': 8, 'ROB_DEPTH': 8, 'RESERVATION_STATION_SIZE': 4, 'LS_QUEUE_DEPTH': 8}
+====================================================================================================
+IPC: 0.381500 | Delay: 4738 | Power: 15.324 | Command: make run_vcs_top_tb PROG=../testcode/coremark_im.elf
+IPC: 0.457039 | Delay: 5697 | Power: 15.455 | Command: make run_vcs_top_tb PROG=../testcode/additional_testcases/compression_im.elf
+IPC: 0.383435 | Delay: 7548 | Power: 15.260 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/mergesort.c
+IPC: 0.368111 | Delay: 8665 | Power: 15.180 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/fft.c
+IPC: 0.312632 | Delay: 12947 | Power: 15.033 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/aes_sha.c
+Total cell area:: 225254.817155 | Command: cd ../synth && make synth
+slack (MET): 0.000081 | Command: cd ../synth && make synth
+
+====================================================================================================
+Running for parameters: {'QUEUE_DEPTH': 8, 'ROB_DEPTH': 8, 'RESERVATION_STATION_SIZE': 8, 'LS_QUEUE_DEPTH': 8}
+====================================================================================================
+IPC: 0.374892 | Delay: 4821 | Power: 15.324 | Command: make run_vcs_top_tb PROG=../testcode/coremark_im.elf
+IPC: 0.457039 | Delay: 5697 | Power: 15.455 | Command: make run_vcs_top_tb PROG=../testcode/additional_testcases/compression_im.elf
+IPC: 0.383816 | Delay: 7540 | Power: 15.260 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/mergesort.c
+IPC: 0.367578 | Delay: 8677 | Power: 15.180 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/fft.c
+IPC: 0.310469 | Delay: 13038 | Power: 15.033 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/aes_sha.c
+Total cell area:: 240510.715044 | Command: cd ../synth && make synth
+slack (MET): 0.000628 | Command: cd ../synth && make synth
+
+====================================================================================================
+Running for parameters: {'QUEUE_DEPTH': 16, 'ROB_DEPTH': 16, 'RESERVATION_STATION_SIZE': 8, 'LS_QUEUE_DEPTH': 8}
+====================================================================================================
+IPC: 0.381458 | Delay: 4738 | Power: 15.324 | Command: make run_vcs_top_tb PROG=../testcode/coremark_im.elf
+IPC: 0.457039 | Delay: 5697 | Power: 15.455 | Command: make run_vcs_top_tb PROG=../testcode/additional_testcases/compression_im.elf
+IPC: 0.383663 | Delay: 7543 | Power: 15.260 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/mergesort.c
+IPC: 0.383744 | Delay: 8312 | Power: 15.180 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/fft.c
+IPC: 0.310799 | Delay: 13024 | Power: 15.033 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/aes_sha.c
+Total cell area:: 250455.391059 | Command: cd ../synth && make synth
+slack (MET): 0.000006 | Command: cd ../synth && make synth
+
+====================================================================================================
+Running for parameters: {'QUEUE_DEPTH': 16, 'ROB_DEPTH': 8, 'RESERVATION_STATION_SIZE': 4, 'LS_QUEUE_DEPTH': 8}
+====================================================================================================
+IPC: 0.382217 | Delay: 4729 | Power: 15.324 | Command: make run_vcs_top_tb PROG=../testcode/coremark_im.elf
+IPC: 0.457039 | Delay: 5697 | Power: 15.455 | Command: make run_vcs_top_tb PROG=../testcode/additional_testcases/compression_im.elf
+IPC: 0.386390 | Delay: 7490 | Power: 15.260 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/mergesort.c
+IPC: 0.375118 | Delay: 8503 | Power: 15.180 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/fft.c
+IPC: 0.311154 | Delay: 13009 | Power: 15.033 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/aes_sha.c
+Total cell area:: 231051.489148 | Command: cd ../synth && make synth
+slack (MET): 0.000403 | Command: cd ../synth && make synth
+
+====================================================================================================
+Running for parameters: {'QUEUE_DEPTH': 16, 'ROB_DEPTH': 8, 'RESERVATION_STATION_SIZE': 8, 'LS_QUEUE_DEPTH': 4}
+====================================================================================================
+IPC: 0.375807 | Delay: 4810 | Power: 15.324 | Command: make run_vcs_top_tb PROG=../testcode/coremark_im.elf
+IPC: 0.457039 | Delay: 5697 | Power: 15.455 | Command: make run_vcs_top_tb PROG=../testcode/additional_testcases/compression_im.elf
+IPC: 0.387316 | Delay: 7472 | Power: 15.260 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/mergesort.c
+IPC: 0.376260 | Delay: 8477 | Power: 15.180 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/fft.c
+IPC: 0.315137 | Delay: 12845 | Power: 15.033 | Command: make run_vcs_top_tb PROG=../testcode/cp3_release_benches/aes_sha.c
+Total cell area:: 231060.533011 | Command: cd ../synth && make synth
+slack (MET): 0.001351 | Command: cd ../synth && make synth
