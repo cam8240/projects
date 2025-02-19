@@ -1,0 +1,1213 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Nov  7 19:47:33 2023
+# Process ID: 7748
+# Current directory: C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28068 C:\Users\cam82\OneDrive\Documents\College\FA23ECE385\lab62\lab62a\lab62a.xpr
+# Log file: C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a/vivado.log
+# Journal file: C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a\vivado.jou
+# Running On: Cameron, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 4, Host memory: 16739 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a/lab62a.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/ip_repo2/hdmi_text_controller_1_0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/ip_repo/hdmi_text_controller_1_0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/ip_repo2/hdmi_text_controller_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/ip_repo/hdmi_text_controller_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'hdmi_tx_0' is locked:
+* IP definition 'hdmi_tx (1.0)' for IP 'hdmi_tx_0' (customized with software release 2023.1) was not found in the IP Catalog.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2478.484 ; gain = 492.324
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.xpr}
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'mb_controller.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+mb_controller_hdmi_text_controller_0_1
+
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2520.445 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}
+Reading block design file <C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:user:hdmi_text_controller:2.0 - hdmi_text_controller_0
+Successfully read diagram <mb_controller> from block design file <C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd>
+ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v2_0_project -directory {C:/Users/cam82/OneDrive/Documents/College/Fall\ 2023/ECE\ 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project} {c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/component.xml}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2959.348 ; gain = 243.750
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0/hdmi_tx_0.xci}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0/hdmi_tx_0.xci}}
+set_property  ip_repo_paths  {{c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0}} [current_project]
+current_project lab7
+current_project hdmi_text_controller_v2_0_project
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+set_property  ip_repo_paths  {{c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0} C:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'.
+create_ip -name hdmi_tx -vendor realdigital.org -library realdigital -version 1.0 -module_name hdmi_tx_0 -dir {c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/src}
+set_property -dict [list \
+  CONFIG.C_BLUE_WIDTH {4} \
+  CONFIG.C_GREEN_WIDTH {4} \
+  CONFIG.C_RED_WIDTH {4} \
+  CONFIG.MODE {HDMI} \
+] [get_ips hdmi_tx_0]
+generate_target {instantiation_template} [get_files {{c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_tx_0'...
+generate_target all [get_files  {{c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_tx_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_tx_0'...
+catch { config_ip_cache -export [get_ips -all hdmi_tx_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hdmi_tx_0
+export_ip_user_files -of_objects [get_files {{c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci}}]
+launch_runs hdmi_tx_0_synth_1 -jobs 4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hdmi_tx_0
+[Tue Nov  7 20:03:57 2023] Launched hdmi_tx_0_synth_1...
+Run output will be captured here: c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project/hdmi_text_controller_v2_0_project.runs/hdmi_tx_0_synth_1/runme.log
+export_simulation -of_objects [get_files {{c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci}}] -directory {c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project/hdmi_text_controller_v2_0_project.ip_user_files/sim_scripts} -ip_user_files_dir {c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project/hdmi_text_controller_v2_0_project.ip_user_files} -ipstatic_source_dir {c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project/hdmi_text_controller_v2_0_project.ip_user_files/ipstatic} -lib_map_path [list {modelsim=c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project/hdmi_text_controller_v2_0_project.cache/compile_simlib/modelsim} {questa=c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project/hdmi_text_controller_v2_0_project.cache/compile_simlib/questa} {riviera=c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project/hdmi_text_controller_v2_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project/hdmi_text_controller_v2_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project lab7
+report_ip_status -name ip_status 
+current_project hdmi_text_controller_v2_0_project
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0/hdmi_tx_0.xci' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0/hdmi_tx_0.xci' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
+INFO: [IP_Flow 19-3166] Bus Interface 'AXI': References existing memory map 'AXI'.
+set_property core_revision 71 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-7067] Note that bus interface 'AXI_CLK' has a fixed FREQ_HZ of ''. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'hdmi_clk_n' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'hdmi_clk_n': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-5661] Bus Interface 'hdmi_clk_p' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'hdmi_clk_p': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_I" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_O" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_T" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_I" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_O" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_T" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "CABLE_CONNECT" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "HPD" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-801] The last file in file group "Verilog Synthesis" should be an HDL file: "src/hdmi_tx_0_1/hdmi_tx_0.xci".  During generation the IP Flow uses the last file to determine library and other information when generating the top wrapper file.  If possible, please make sure that non-HDL files are located earlier in the list of files for this file group.
+WARNING: [IP_Flow 19-801] The last file in file group "Verilog Simulation" should be an HDL file: "src/hdmi_tx_0_1/hdmi_tx_0.xci".  During generation the IP Flow uses the last file to determine library and other information when generating the top wrapper file.  If possible, please make sure that non-HDL files are located earlier in the list of files for this file group.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path {c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0}
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:hdmi_text_controller:2.0 [get_ips  mb_controller_hdmi_text_controller_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+INFO: [IP_Flow 19-3422] Upgraded mb_controller_hdmi_text_controller_0_1 (hdmi_text_controller_v1.0 2.0) from revision 70 to revision 71
+WARNING: [IP_Flow 19-3571] IP 'mb_controller_hdmi_text_controller_0_1' is restricted:
+* IP definition 'hdmi_text_controller_v1.0 (2.0)' relies on the following subcore(s) that were not found in the IP Catalog: realdigital.org:realdigital:hdmi_tx:1.0
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+Wrote  : <C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/ui/bd_99e31946.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips mb_controller_hdmi_text_controller_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}]
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/sim/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hdl/mb_controller_wrapper.v
+CRITICAL WARNING: [IP_Flow 19-4065] The definition for subcore dependency 'realdigital.org:realdigital:hdmi_tx:1.0' is not available in the repository.
+CRITICAL WARNING: [IP_Flow 19-4065] The definition for subcore dependency 'realdigital.org:realdigital:hdmi_tx:1.0' is not available in the repository.
+WARNING: [IP_Flow 19-1823] Unable to identify upgrade version ''
+CRITICAL WARNING: [IP_Flow 19-3817] IP 'mb_controller_hdmi_text_controller_0_1' failed to properly generate child IP 'hdmi_tx_0'.  Please edit or regenerate IP Definition to correct the child IP.  Reason: 
+Cannot upgrade to invalid target ''
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Cannot upgrade to invalid target ''
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block hdmi_text_controller_0 
+Exporting to file c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hw_handoff/mb_controller.hwh
+Generated Hardware Definition File c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.hwdef
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+set_property  ip_repo_paths  {{c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+set_property  ip_repo_paths  {{c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0} C:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'.
+open_bd_design {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}
+open_bd_design {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}
+ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v2_0_project -directory {C:/Users/cam82/OneDrive/Documents/College/Fall\ 2023/ECE\ 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project} {c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/component.xml}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::reorder_files -after src/blk_mem_gen_0/blk_mem_gen_0.xci src/hdmi_tx_0_1/hdmi_tx_0.xci [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+ipx::reorder_files -after src/blk_mem_gen_0/blk_mem_gen_0.xci src/hdmi_tx_0_1/hdmi_tx_0.xci [ipx::get_file_groups xilinx_verilogbehavioralsimulation -of_objects [ipx::current_core]]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 72 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-7067] Note that bus interface 'AXI_CLK' has a fixed FREQ_HZ of ''. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'hdmi_clk_n' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'hdmi_clk_n': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-5661] Bus Interface 'hdmi_clk_p' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'hdmi_clk_p': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_I" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_O" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_T" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_I" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_O" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_T" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "CABLE_CONNECT" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "HPD" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path {c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0}
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:hdmi_text_controller:2.0 [get_ips  mb_controller_hdmi_text_controller_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+INFO: [IP_Flow 19-3422] Upgraded mb_controller_hdmi_text_controller_0_1 (hdmi_text_controller_v1.0 2.0) from revision 71 to revision 72
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips mb_controller_hdmi_text_controller_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}]
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/sim/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hdl/mb_controller_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_text_controller_0 .
+Exporting to file c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hw_handoff/mb_controller.hwh
+Generated Hardware Definition File c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.hwdef
+catch { config_ip_cache -export [get_ips -all mb_controller_hdmi_text_controller_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+export_ip_user_files -of_objects [get_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}]
+launch_runs mb_controller_hdmi_text_controller_0_1_synth_1 -jobs 4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+[Tue Nov  7 20:10:53 2023] Launched mb_controller_hdmi_text_controller_0_1_synth_1...
+Run output will be captured here: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_hdmi_text_controller_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}] -directory {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files} -ipstatic_source_dir {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/utils_1/imports/synth_1/mb_controller_top.dcp with file C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/synth_1/mb_controller_top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+[Tue Nov  7 20:11:07 2023] Launched mb_controller_hdmi_text_controller_0_1_synth_1, synth_1...
+Run output will be captured here:
+mb_controller_hdmi_text_controller_0_1_synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_hdmi_text_controller_0_1_synth_1/runme.log
+synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/synth_1/runme.log
+[Tue Nov  7 20:11:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/impl_1/runme.log
+ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v2_0_project -directory {C:/Users/cam82/OneDrive/Documents/College/Fall\ 2023/ECE\ 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project} {c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/component.xml}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+current_project lab7
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'.
+report_ip_status -name ip_status
+current_project hdmi_text_controller_v2_0_project
+current_project lab7
+reset_run synth_1
+reset_run mb_controller_hdmi_text_controller_0_1_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_hdmi_text_controller_0_1_synth_1
+
+upgrade_ip -vlnv xilinx.com:user:hdmi_text_controller:2.0 [get_ips  mb_controller_hdmi_text_controller_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+INFO: [IP_Flow 19-3420] Updated mb_controller_hdmi_text_controller_0_1 to use current project options
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips mb_controller_hdmi_text_controller_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}]
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/sim/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hdl/mb_controller_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_text_controller_0 .
+Exporting to file c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hw_handoff/mb_controller.hwh
+Generated Hardware Definition File c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.hwdef
+catch { config_ip_cache -export [get_ips -all mb_controller_hdmi_text_controller_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+export_ip_user_files -of_objects [get_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}]
+launch_runs mb_controller_hdmi_text_controller_0_1_synth_1 -jobs 4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+[Tue Nov  7 20:12:41 2023] Launched mb_controller_hdmi_text_controller_0_1_synth_1...
+Run output will be captured here: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_hdmi_text_controller_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}] -directory {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files} -ipstatic_source_dir {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+[Tue Nov  7 20:12:55 2023] Launched mb_controller_hdmi_text_controller_0_1_synth_1, synth_1...
+Run output will be captured here:
+mb_controller_hdmi_text_controller_0_1_synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_hdmi_text_controller_0_1_synth_1/runme.log
+synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/synth_1/runme.log
+[Tue Nov  7 20:12:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/impl_1/runme.log
+open_project C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a/lab62a.xpr
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/ip_repo2/hdmi_text_controller_1_0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/ip_repo/hdmi_text_controller_1_0'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/ip_repo2/hdmi_text_controller_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/ip_repo/hdmi_text_controller_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+update_compile_order -fileset sources_1
+current_project lab7
+current_project lab62a
+current_project lab7
+current_project lab62a
+open_bd_design {C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a/lab62a.srcs/sources_1/bd/mb_block/mb_block.bd}
+Reading block design file <C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a/lab62a.srcs/sources_1/bd/mb_block/mb_block.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - gpio_usb_rst
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - gpio_usb_int
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - gpio_usb_keycode
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - timer_usb_axi
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - spi_usb
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Successfully read diagram <mb_block> from block design file <C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a/lab62a.srcs/sources_1/bd/mb_block/mb_block.bd>
+current_project lab7
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property name gpio_usb_keycode [get_bd_cells axi_gpio_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property name gpio_usb_int [get_bd_cells axi_gpio_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property name gpio_usb_rst [get_bd_cells axi_gpio_0]
+current_project lab62a
+current_project lab7
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_ALL_OUTPUTS_2 {1} \
+  CONFIG.C_IS_DUAL {1} \
+] [get_bd_cells gpio_usb_keycode]
+current_project lab62a
+current_project lab7
+set_property -dict [list \
+  CONFIG.C_ALL_INPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {1} \
+] [get_bd_cells gpio_usb_int]
+current_project lab62a
+current_project lab7
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {1} \
+] [get_bd_cells gpio_usb_rst]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0
+endgroup
+current_project lab62a
+update_gui_for_PARAM_VALUE.C_XIP_MODE- xip_mode: 0 spi_mode: 0 xip_perf_mode: 1
+update_gui_for_PARAM_VALUE.C_XIP_PERF_MODE- xip_mode: 0 xip_perf_mode: 1 axi4_interface: 0
+current_project lab7
+set_property CONFIG.enable_timer2 {0} [get_bd_cells axi_timer_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_quad_spi_0
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'C_S_AXI4_ID_WIDTH' of cell '/axi_quad_spi_0' is ignored
+endgroup
+update_gui_for_PARAM_VALUE.C_XIP_MODE- xip_mode: 0 spi_mode: 0 xip_perf_mode: 1
+update_gui_for_PARAM_VALUE.C_XIP_PERF_MODE- xip_mode: 0 xip_perf_mode: 1 axi4_interface: 0
+set_property CONFIG.C_SCK_RATIO {4} [get_bd_cells axi_quad_spi_0]
+set_property name timer_usb_axi [get_bd_cells axi_timer_0]
+set_property name spi_usb [get_bd_cells axi_quad_spi_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property CONFIG.NUM_PORTS {4} [get_bd_cells xlconcat_0]
+set_property name microblaze_0_xlconcat [get_bd_cells xlconcat_0]
+set_property CONFIG.C_INTERRUPT_PRESENT {1} [get_bd_cells gpio_usb_int]
+update_gui_for_PARAM_VALUE.C_XIP_MODE- xip_mode: 0 spi_mode: 0 xip_perf_mode: 1
+update_gui_for_PARAM_VALUE.C_XIP_PERF_MODE- xip_mode: 0 xip_perf_mode: 1 axi4_interface: 0
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_int/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_0 /gpio_usb_int/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_int/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_int/S_AXI]
+Slave segment '/gpio_usb_int/S_AXI/Reg' is being assigned into address space '/microblaze_0/Data' at <0x4000_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_keycode/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_1
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_1 /gpio_usb_keycode/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_keycode/GPIO2]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_2
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_2 /gpio_usb_keycode/GPIO2
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_keycode/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_keycode/S_AXI]
+Slave segment '/gpio_usb_keycode/S_AXI/Reg' is being assigned into address space '/microblaze_0/Data' at <0x4001_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_rst/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_3
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_3 /gpio_usb_rst/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_rst/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_rst/S_AXI]
+Slave segment '/gpio_usb_rst/S_AXI/Reg' is being assigned into address space '/microblaze_0/Data' at <0x4002_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/spi_usb/AXI_LITE} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins spi_usb/AXI_LITE]
+Slave segment '/spi_usb/AXI_LITE/Reg' is being assigned into address space '/microblaze_0/Data' at <0x44A1_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins spi_usb/SPI_0]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 spi_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /spi_rtl_0 /spi_usb/SPI_0
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/timer_usb_axi/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins timer_usb_axi/S_AXI]
+Slave segment '/timer_usb_axi/S_AXI/Reg' is being assigned into address space '/microblaze_0/Data' at <0x41C0_0000 [ 64K ]>.
+endgroup
+connect_bd_net [get_bd_pins timer_usb_axi/pwm0] [get_bd_pins microblaze_0_xlconcat/In0]
+current_project lab62a
+current_project lab7
+connect_bd_net [get_bd_pins gpio_usb_int/ip2intc_irpt] [get_bd_pins microblaze_0_xlconcat/In2]
+delete_bd_objs [get_bd_nets gpio_usb_int_ip2intc_irpt]
+connect_bd_net [get_bd_pins spi_usb/ip2intc_irpt] [get_bd_pins microblaze_0_xlconcat/In2]
+current_project lab62a
+current_project lab7
+connect_bd_net [get_bd_pins gpio_usb_int/ip2intc_irpt] [get_bd_pins microblaze_0_xlconcat/In1]
+current_project lab62a
+current_project lab7
+current_project lab62a
+current_project lab7
+delete_bd_objs [get_bd_nets axi_uartlite_0_interrupt]
+connect_bd_net [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins microblaze_0_xlconcat/In3]
+connect_bd_net [get_bd_pins microblaze_0_xlconcat/dout] [get_bd_pins microblaze_0_axi_intc/intr]
+regenerate_bd_layout
+current_project lab62a
+current_project lab7
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins spi_usb/ext_spi_clk]
+delete_bd_objs [get_bd_intf_nets spi_usb_SPI_0] [get_bd_intf_ports spi_rtl_0]
+create_bd_port -dir I usb_spi_mosi
+set_property location {2100 889} [get_bd_ports usb_spi_mosi]
+create_bd_port -dir I usb_spi_sclk
+set_property location {2252 921} [get_bd_ports usb_spi_sclk]
+connect_bd_net [get_bd_ports usb_spi_mosi] [get_bd_pins spi_usb/io0_i]
+WARNING: [BD 41-1306] The connection to interface pin </spi_usb/io0_i> is being overridden by the user with net <usb_spi_mosi_1>. This pin will not be connected as a part of interface connection <SPI_0>.
+update_gui_for_PARAM_VALUE.C_XIP_MODE- xip_mode: 0 spi_mode: 0 xip_perf_mode: 1
+update_gui_for_PARAM_VALUE.C_XIP_PERF_MODE- xip_mode: 0 xip_perf_mode: 1 axi4_interface: 0
+startgroup
+set_property CONFIG.C_USE_STARTUP {0} [get_bd_cells spi_usb]
+endgroup
+delete_bd_objs [get_bd_ports usb_spi_sclk]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_ports usb_spi_sclk]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property CONFIG.C_USE_STARTUP {0} [get_bd_cells spi_usb]'
+INFO: [Common 17-17] undo 'startgroup'
+update_gui_for_PARAM_VALUE.C_XIP_MODE- xip_mode: 0 spi_mode: 0 xip_perf_mode: 1
+update_gui_for_PARAM_VALUE.C_XIP_PERF_MODE- xip_mode: 0 xip_perf_mode: 1 axi4_interface: 0
+startgroup
+set_property CONFIG.C_USE_STARTUP {0} [get_bd_cells spi_usb]
+endgroup
+set_property location {2116 939} [get_bd_ports usb_spi_sclk]
+delete_bd_objs [get_bd_nets usb_spi_mosi_1]
+create_bd_port -dir O usb_spi_ss
+delete_bd_objs [get_bd_ports usb_spi_sclk]
+delete_bd_objs [get_bd_ports usb_spi_mosi]
+connect_bd_net [get_bd_ports usb_spi_ss] [get_bd_pins spi_usb/ss_o]
+WARNING: [BD 41-1306] The connection to interface pin </spi_usb/ss_o> is being overridden by the user with net <spi_usb_ss_o>. This pin will not be connected as a part of interface connection <SPI_0>.
+delete_bd_objs [get_bd_nets spi_usb_ss_o] [get_bd_ports usb_spi_ss]
+startgroup
+create_bd_port -dir O -from 0 -to 0 usb_spi_ss
+connect_bd_net [get_bd_pins /spi_usb/ss_o] [get_bd_ports usb_spi_ss]
+WARNING: [BD 41-1306] The connection to interface pin </spi_usb/ss_o> is being overridden by the user with net <spi_usb_ss_o>. This pin will not be connected as a part of interface connection <SPI_0>.
+endgroup
+startgroup
+create_bd_port -dir O usb_spi_mosi
+connect_bd_net [get_bd_pins /spi_usb/io0_o] [get_bd_ports usb_spi_mosi]
+WARNING: [BD 41-1306] The connection to interface pin </spi_usb/io0_o> is being overridden by the user with net <spi_usb_io0_o>. This pin will not be connected as a part of interface connection <SPI_0>.
+endgroup
+startgroup
+create_bd_port -dir O usb_spi_sclk
+connect_bd_net [get_bd_pins /spi_usb/sck_o] [get_bd_ports usb_spi_sclk]
+WARNING: [BD 41-1306] The connection to interface pin </spi_usb/sck_o> is being overridden by the user with net <spi_usb_sck_o>. This pin will not be connected as a part of interface connection <SPI_0>.
+endgroup
+save_bd_design
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+Wrote  : <C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/ui/bd_99e31946.ui> 
+validate_bd_design
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /microblaze_0_axi_intc: Property SENSITIVITY = "NULL" for interrupt input 0 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /spi_usb 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+set_property name gpio_usb_keycode0 [get_bd_intf_ports gpio_rtl_1]
+set_property name gpio_usb_keycode1 [get_bd_intf_ports gpio_rtl_2]
+set_property name gpio_usb_keycode_1 [get_bd_intf_ports gpio_usb_keycode1]
+set_property name gpio_usb_keycode_0 [get_bd_intf_ports gpio_usb_keycode0]
+set_property location {2065 1241} [get_bd_intf_ports gpio_usb_keycode_0]
+set_property location {2044 1240} [get_bd_intf_ports gpio_usb_keycode_0]
+set_property name gpio_usb_rst [get_bd_intf_ports gpio_rtl_3]
+set_property name gpio_usb_int [get_bd_intf_ports gpio_rtl_0]
+validate_bd_design
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /microblaze_0_axi_intc: Property SENSITIVITY = "NULL" for interrupt input 0 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /spi_usb 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+current_project lab62a
+current_project lab7
+make_wrapper -files [get_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}] -top
+INFO: [BD 41-1662] The design 'mb_controller.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+Wrote  : <C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/ui/bd_99e31946.ui> 
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/sim/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hdl/mb_controller_wrapper.v
+open_bd_design {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}
+open_bd_design {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}
+current_project hdmi_text_controller_v2_0_project
+current_project lab7
+current_project hdmi_text_controller_v2_0_project
+current_project lab7
+current_project hdmi_text_controller_v2_0_project
+current_project lab7
+close [ open {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/new/ball.sv} w ]
+add_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/new/ball.sv}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/new/color_mapper.sv} w ]
+add_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/new/color_mapper.sv}}
+update_compile_order -fileset sources_1
+current_project lab62a
+current_project lab7
+current_project lab62a
+current_project lab7
+current_project hdmi_text_controller_v2_0_project
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset_ah' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-3166] Bus Interface 'AXI': References existing memory map 'AXI'.
+set_property core_revision 73 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-7067] Note that bus interface 'AXI_CLK' has a fixed FREQ_HZ of ''. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'hdmi_clk_n' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'hdmi_clk_n': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-5661] Bus Interface 'hdmi_clk_p' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'hdmi_clk_p': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_I" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_O" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_T" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_I" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_O" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_T" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "CABLE_CONNECT" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "HPD" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path {c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0}
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'
+current_project lab7
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'.
+report_ip_status -name ip_status
+current_project lab62a
+current_project lab7
+upgrade_ip -vlnv xilinx.com:user:hdmi_text_controller:2.0 [get_ips  mb_controller_hdmi_text_controller_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+INFO: [IP_Flow 19-3422] Upgraded mb_controller_hdmi_text_controller_0_1 (hdmi_text_controller_v1.0 2.0) from revision 72 to revision 73
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'ballsizesig'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'ballxsig'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'ballysig'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'blue'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'drawX'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'drawY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'green'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'locked'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'red'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reset_ah'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'vsync'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'mb_controller_hdmi_text_controller_0_1'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'mb_controller_hdmi_text_controller_0_1' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+Wrote  : <C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/ui/bd_99e31946.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips mb_controller_hdmi_text_controller_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}]
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /microblaze_0_axi_intc: Property SENSITIVITY = "NULL" for interrupt input 0 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /spi_usb 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/sim/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hdl/mb_controller_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_text_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gpio_usb_keycode .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gpio_usb_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gpio_usb_rst .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/ip/mb_controller_axi_timer_0_0/mb_controller_axi_timer_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block timer_usb_axi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block spi_usb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+Exporting to file c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hw_handoff/mb_controller.hwh
+Generated Hardware Definition File c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.hwdef
+catch { config_ip_cache -export [get_ips -all mb_controller_dlmb_bram_if_cntlr_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_dlmb_bram_if_cntlr_0
+catch { config_ip_cache -export [get_ips -all mb_controller_xbar_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_xbar_0
+catch { config_ip_cache -export [get_ips -all mb_controller_microblaze_0_axi_intc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_microblaze_0_axi_intc_0
+catch { config_ip_cache -export [get_ips -all mb_controller_hdmi_text_controller_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+catch { config_ip_cache -export [get_ips -all mb_controller_axi_gpio_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_axi_gpio_0_0
+catch { config_ip_cache -export [get_ips -all mb_controller_axi_gpio_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_axi_gpio_0_1
+catch { config_ip_cache -export [get_ips -all mb_controller_axi_gpio_0_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_axi_gpio_0_2
+catch { config_ip_cache -export [get_ips -all mb_controller_axi_timer_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_axi_timer_0_0
+catch { config_ip_cache -export [get_ips -all mb_controller_axi_quad_spi_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_axi_quad_spi_0_0
+export_ip_user_files -of_objects [get_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}]
+launch_runs mb_controller_axi_gpio_0_0_synth_1 mb_controller_axi_gpio_0_1_synth_1 mb_controller_axi_gpio_0_2_synth_1 mb_controller_axi_quad_spi_0_0_synth_1 mb_controller_axi_timer_0_0_synth_1 mb_controller_dlmb_bram_if_cntlr_0_synth_1 mb_controller_hdmi_text_controller_0_1_synth_1 mb_controller_microblaze_0_axi_intc_0_synth_1 mb_controller_xbar_0_synth_1 -jobs 4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_axi_gpio_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_axi_gpio_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_axi_gpio_0_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_axi_quad_spi_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_axi_timer_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_dlmb_bram_if_cntlr_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_microblaze_0_axi_intc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_xbar_0
+[Tue Nov  7 21:23:21 2023] Launched mb_controller_axi_gpio_0_0_synth_1, mb_controller_axi_gpio_0_1_synth_1, mb_controller_axi_gpio_0_2_synth_1, mb_controller_axi_quad_spi_0_0_synth_1, mb_controller_axi_timer_0_0_synth_1, mb_controller_dlmb_bram_if_cntlr_0_synth_1, mb_controller_hdmi_text_controller_0_1_synth_1, mb_controller_microblaze_0_axi_intc_0_synth_1, mb_controller_xbar_0_synth_1...
+Run output will be captured here:
+mb_controller_axi_gpio_0_0_synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_axi_gpio_0_0_synth_1/runme.log
+mb_controller_axi_gpio_0_1_synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_axi_gpio_0_1_synth_1/runme.log
+mb_controller_axi_gpio_0_2_synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_axi_gpio_0_2_synth_1/runme.log
+mb_controller_axi_quad_spi_0_0_synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_axi_quad_spi_0_0_synth_1/runme.log
+mb_controller_axi_timer_0_0_synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_axi_timer_0_0_synth_1/runme.log
+mb_controller_dlmb_bram_if_cntlr_0_synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_dlmb_bram_if_cntlr_0_synth_1/runme.log
+mb_controller_hdmi_text_controller_0_1_synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_hdmi_text_controller_0_1_synth_1/runme.log
+mb_controller_microblaze_0_axi_intc_0_synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_microblaze_0_axi_intc_0_synth_1/runme.log
+mb_controller_xbar_0_synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_xbar_0_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}] -directory {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files} -ipstatic_source_dir {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+open_bd_design {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}
+ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v2_0_project -directory {C:/Users/cam82/OneDrive/Documents/College/Fall\ 2023/ECE\ 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project} {c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/component.xml}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'vga_to_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_text_controller_v1_0_AXI_inst/BRAM'...
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Tue Nov  7 21:26:59 2023] Launched synth_1...
+Run output will be captured here: c:/users/cam82/onedrive/documents/college/fall 2023/ece 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project/hdmi_text_controller_v2_0_project.runs/synth_1/runme.log
+current_project lab7
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'.
+report_ip_status -name ip_status
+current_project hdmi_text_controller_v2_0_project
+current_project lab7
+upgrade_ip -vlnv xilinx.com:user:hdmi_text_controller:2.0 [get_ips  mb_controller_hdmi_text_controller_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+INFO: [IP_Flow 19-3420] Updated mb_controller_hdmi_text_controller_0_1 to use current project options
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+Wrote  : <C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/ui/bd_99e31946.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips mb_controller_hdmi_text_controller_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}]
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /microblaze_0_axi_intc: Property SENSITIVITY = "NULL" for interrupt input 0 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /spi_usb 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/sim/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hdl/mb_controller_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_text_controller_0 .
+Exporting to file c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hw_handoff/mb_controller.hwh
+Generated Hardware Definition File c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.hwdef
+catch { config_ip_cache -export [get_ips -all mb_controller_hdmi_text_controller_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+export_ip_user_files -of_objects [get_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}]
+launch_runs mb_controller_hdmi_text_controller_0_1_synth_1 -jobs 4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+[Tue Nov  7 21:30:20 2023] Launched mb_controller_hdmi_text_controller_0_1_synth_1...
+Run output will be captured here: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_hdmi_text_controller_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}] -directory {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files} -ipstatic_source_dir {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v2_0_project -directory {C:/Users/cam82/OneDrive/Documents/College/Fall\ 2023/ECE\ 385/lab7/lab7/lab7.tmp/hdmi_text_controller_v2_0_project} {c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0/component.xml}
+ERROR: [Ipptcl 7-561] A project named 'hdmi_text_controller_v2_0_project' is already opened.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+current_project hdmi_text_controller_v2_0_project
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
+CRITICAL WARNING: [IP_Flow 19-4834] IP port (reset_ah) was removed from the interface 'reset_ah'. Please review the IP interface 'reset_ah'.
+INFO: [IP_Flow 19-3166] Bus Interface 'AXI': References existing memory map 'AXI'.
+set_property core_revision 74 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-7067] Note that bus interface 'AXI_CLK' has a fixed FREQ_HZ of ''. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'hdmi_clk_n' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'hdmi_clk_n': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-5661] Bus Interface 'hdmi_clk_p' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'hdmi_clk_p': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_I" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_O" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_T" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_I" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_O" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_T" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "CABLE_CONNECT" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "HPD" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path {c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0}
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'
+current_project lab7
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cam82/OneDrive/Desktop/hdmi_tx_1.0'.
+report_ip_status -name ip_status
+current_project lab62a
+current_project lab7
+upgrade_ip -vlnv xilinx.com:user:hdmi_text_controller:2.0 [get_ips  mb_controller_hdmi_text_controller_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+INFO: [IP_Flow 19-3422] Upgraded mb_controller_hdmi_text_controller_0_1 (hdmi_text_controller_v1.0 2.0) from revision 73 to revision 74
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ballsizesig'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ballxsig'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ballysig'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'locked'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'reset_ah'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'mb_controller_hdmi_text_controller_0_1'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'mb_controller_hdmi_text_controller_0_1' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+Wrote  : <C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/ui/bd_99e31946.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips mb_controller_hdmi_text_controller_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}]
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /microblaze_0_axi_intc: Property SENSITIVITY = "NULL" for interrupt input 0 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /spi_usb 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+Wrote  : <C:\Users\cam82\OneDrive\Documents\College\Fall 2023\ECE 385\lab7\lab7\lab7.srcs\sources_1\bd\mb_controller\mb_controller.bd> 
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/sim/mb_controller.v
+Verilog Output written to : c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hdl/mb_controller_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_text_controller_0 .
+Exporting to file c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/hw_handoff/mb_controller.hwh
+Generated Hardware Definition File c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/synth/mb_controller.hwdef
+catch { config_ip_cache -export [get_ips -all mb_controller_hdmi_text_controller_0_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+export_ip_user_files -of_objects [get_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}]
+launch_runs mb_controller_hdmi_text_controller_0_1_synth_1 -jobs 4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+[Tue Nov  7 21:33:34 2023] Launched mb_controller_hdmi_text_controller_0_1_synth_1...
+Run output will be captured here: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_hdmi_text_controller_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}] -directory {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files} -ipstatic_source_dir {C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/utils_1/imports/synth_1/mb_controller_top.dcp with file C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/synth_1/mb_controller_top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_controller_hdmi_text_controller_0_1
+[Tue Nov  7 21:34:09 2023] Launched mb_controller_hdmi_text_controller_0_1_synth_1, synth_1...
+Run output will be captured here:
+mb_controller_hdmi_text_controller_0_1_synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/mb_controller_hdmi_text_controller_0_1_synth_1/runme.log
+synth_1: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/synth_1/runme.log
+[Tue Nov  7 21:34:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.205 . Memory (MB): peak = 4700.387 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 431 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.776 . Memory (MB): peak = 5244.285 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.776 . Memory (MB): peak = 5244.285 ; gain = 0.000
+Generating merged BMM file for the design top 'mb_controller_top'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/ip/mb_controller_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 5244.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 250 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 143 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 68 instances
+  SRLC16E => SRL16E: 1 instance 
+
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/utils_1/imports/synth_1/mb_controller_top.dcp with file C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/synth_1/mb_controller_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Nov  7 21:39:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/synth_1/runme.log
+[Tue Nov  7 21:39:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.runs/impl_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd}}]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.217 . Memory (MB): peak = 5566.172 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 431 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.739 . Memory (MB): peak = 5566.172 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.740 . Memory (MB): peak = 5566.172 ; gain = 0.000
+Generating merged BMM file for the design top 'mb_controller_top'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/cam82/OneDrive/Documents/College/Fall 2023/ECE 385/lab7/lab7/lab7.gen/sources_1/bd/mb_controller/ip/mb_controller_microblaze_0_0/data/mb_bootloop_le.elf 
+current_project lab62a
+close_project
+WARNING: [Vivado 12-818] No files matched 'C:/Users/cam82/OneDrive/Documents/College/Fall'
+WARNING: [Vivado 12-818] No files matched '2023/ECE'
+WARNING: [Vivado 12-818] No files matched '385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/cam82/OneDrive/Documents/College/Fall'
+WARNING: [Vivado 12-818] No files matched '2023/ECE'
+WARNING: [Vivado 12-818] No files matched '385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/cam82/OneDrive/Documents/College/Fall'
+WARNING: [Vivado 12-818] No files matched '2023/ECE'
+WARNING: [Vivado 12-818] No files matched '385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/cam82/OneDrive/Documents/College/Fall'
+WARNING: [Vivado 12-818] No files matched '2023/ECE'
+WARNING: [Vivado 12-818] No files matched '385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+write_hw_platform -fixed -include_bit -force -file C:/Users/cam82/OneDrive/Desktop/mb_controller_top.xsa
+ERROR: [Common 17-1293] The path 'C:/Users/cam82/OneDrive/Desktop' already exists, is a directory, but is not writable.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/cam82/OneDrive/Documents/College/Fall'
+WARNING: [Vivado 12-818] No files matched '2023/ECE'
+WARNING: [Vivado 12-818] No files matched '385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/cam82/OneDrive/Documents/College/Fall'
+WARNING: [Vivado 12-818] No files matched '2023/ECE'
+WARNING: [Vivado 12-818] No files matched '385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/cam82/OneDrive/Documents/College/Fall'
+WARNING: [Vivado 12-818] No files matched '2023/ECE'
+WARNING: [Vivado 12-818] No files matched '385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-818] No files matched 'C:/Users/cam82/OneDrive/Documents/College/Fall'
+WARNING: [Vivado 12-818] No files matched '2023/ECE'
+WARNING: [Vivado 12-818] No files matched '385/lab7/lab7/lab7.srcs/sources_1/bd/mb_controller/mb_controller.bd'
+ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+write_hw_platform -fixed -include_bit -force -file C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/finalproject/mb_controller_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/finalproject/mb_controller_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/finalproject/mb_controller_top.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2023.1/data/embeddedsw) loading 0 seconds
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  7 22:26:41 2023...
