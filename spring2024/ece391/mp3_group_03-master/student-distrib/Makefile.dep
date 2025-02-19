@@ -1,0 +1,26 @@
+boot.o: boot.S multiboot.h x86_desc.h types.h
+idt_asm.o: idt_asm.S idt_asm.h
+interrupt_asm.o: interrupt_asm.S interrupt_asm.h
+paging_asm.o: paging_asm.S
+syscall_asm.o: syscall_asm.S x86_desc.h types.h
+x86_desc.o: x86_desc.S x86_desc.h types.h
+filesystem.o: filesystem.c filesystem.h types.h lib.h terminal.h rtc.h
+i8259.o: i8259.c i8259.h types.h lib.h
+idt.o: idt.c x86_desc.h types.h lib.h idt.h idt_asm.h interrupt_asm.h \
+  keyboard.h rtc.h pit.h syscall.h filesystem.h
+kernel.o: kernel.c multiboot.h types.h x86_desc.h lib.h i8259.h idt.h \
+  debug.h tests.h keyboard.h rtc.h paging.h terminal.h filesystem.h \
+  syscall.h schedule.h pit.h
+keyboard.o: keyboard.c keyboard.h types.h i8259.h lib.h terminal.h
+lib.o: lib.c lib.h types.h terminal.h
+paging.o: paging.c paging.h types.h
+pit.o: pit.c pit.h types.h rtc.h i8259.h lib.h schedule.h
+rtc.o: rtc.c rtc.h types.h i8259.h lib.h
+schedule.o: schedule.c schedule.h types.h x86_desc.h paging.h terminal.h \
+  lib.h rtc.h i8259.h keyboard.h syscall.h filesystem.h
+syscall.o: syscall.c syscall.h types.h filesystem.h x86_desc.h paging.h \
+  terminal.h lib.h rtc.h keyboard.h
+terminal.o: terminal.c terminal.h types.h rtc.h i8259.h lib.h syscall.h \
+  filesystem.h paging.h
+tests.o: tests.c tests.h x86_desc.h types.h lib.h idt.h rtc.h keyboard.h \
+  paging.h terminal.h filesystem.h syscall.h
