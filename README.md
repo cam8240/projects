@@ -42,3 +42,41 @@ This repository is a collection of advanced technical projects demonstrating exp
 - **Technologies**: SystemVerilog, FPGA tools.
 
 ## File Structure
+```
+showcase-repo/
+├── riscv-processor/         # Out-of-Order RISC-V Processor
+│   ├── src/                # Source files (RISC-V assembly, simulation scripts)
+│   └── docs/               # Documentation and design notes
+├── linux-kernel/           # Linux Kernel Project
+│   ├── src/                # Source files (C, x86 assembly)
+│   └── docs/               # Kernel documentation
+├── hardware-game/          # SystemVerilog Game
+│   ├── src/                # Source files (SystemVerilog)
+│   └── docs/               # Hardware design specs
+└── README.md               # This file
+```
+
+## Installation
+Each project has unique setup requirements:
+1. **RISC-V Processor**: Requires a RISC-V simulator (e.g., RARS or Spike) or FPGA tools for synthesis.
+2. **Linux Kernel**: Needs a Linux environment, GCC, and QEMU for x86 emulation.
+3. **Hardware Game**: Requires an FPGA board (e.g., DE10-Nano) and Quartus or Vivado for synthesis.
+
+## Usage
+- **RISC-V Processor**: Run simulations or synthesize to test processor performance with provided test benches.
+- **Linux Kernel**: Compile and boot in QEMU to interact with the custom OS and terminals.
+- **Hardware Game**: Deploy to an FPGA to play the game via hardware inputs and display.
+
+Refer to each project’s `docs/` folder for detailed usage instructions.
+
+## Skills Demonstrated
+- Processor architecture and optimization (RISC-V).
+- Operating system design and kernel programming (C, x86).
+- Hardware description languages and FPGA development (SystemVerilog).
+- Low-level programming and system integration.
+
+## Contributing
+This repository is a personal showcase and not actively seeking contributions. However, feedback or collaboration inquiries are welcome via email or GitHub Issues.
+
+## License
+© 2025 Cameron Marchese. All rights reserved. These projects are shared for demonstration purposes. Usage or reproduction requires explicit permission.
