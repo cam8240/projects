@@ -1,6 +1,6 @@
 # UIUC ECE Project Showcase Repository
 
-This repository is a collection of advanced technical projects demonstrating expertise in computer engineering, systems programming, and hardware design. These projects were developed as part of academic and personal exploration into low-level systems, processor design, and hardware programming. Linked on my resume, this showcase highlights my skills in RISC-V, C, x86 assembly, SystemVerilog, and more.
+This repository is a collection of advanced technical projects demonstrating expertise in computer engineering, systems programming, and hardware design. These projects were developed as part of academic and personal exploration into low-level systems, processor design, and hardware programming. Linked on my resume, this showcase highlights my skills in RISC-V, C, x86 assembly, SystemVerilog, and more. Projects can be found in the `Master` branch.
 
 ## Table of Contents
 - [Projects](#projects)
