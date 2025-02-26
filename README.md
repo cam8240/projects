@@ -1,4 +1,4 @@
-# Project Showcase Repository
+# UIUC ECE Project Showcase Repository
 
 This repository is a collection of advanced technical projects demonstrating expertise in computer engineering, systems programming, and hardware design. These projects were developed as part of academic and personal exploration into low-level systems, processor design, and hardware programming. Linked on my resume, this showcase highlights my skills in RISC-V, C, x86 assembly, SystemVerilog, and more.
 
@@ -16,7 +16,7 @@ This repository is a collection of advanced technical projects demonstrating exp
 
 ## Projects
 
-### Out-of-Order RISC-V Processor
+### Out-of-Order RISC-V Processor (ECE 411)
 - **Description**: Designed and implemented an out-of-order processor based on RISC-V assembly, featuring advanced performance optimizations.
 - **Features**:
   - 4-way set associative L1 data and instruction cache.
@@ -25,7 +25,7 @@ This repository is a collection of advanced technical projects demonstrating exp
   - Split Load/Store Queue (LSQ) for out-of-order execution.
 - **Technologies**: RISC-V assembly, hardware simulation tools.
 
-### Linux Kernel with Multi-Terminal Scheduling
+### Linux Kernel with Multi-Terminal Scheduling (ECE 391)
 - **Description**: Developed a custom Linux operating system kernel with support for multitasking and multi-terminal operations.
 - **Features**:
   - Paging for memory management.
@@ -33,7 +33,7 @@ This repository is a collection of advanced technical projects demonstrating exp
   - Multi-terminal scheduling supporting up to 6 simultaneous tasks and 3 active terminals.
 - **Technologies**: C, x86 assembly.
 
-### Hardware-Based Game in SystemVerilog
+### Hardware-Based Game in SystemVerilog (ECE 385)
 - **Description**: Created a hardware-implemented game using SystemVerilog, showcasing low-level hardware design and programming.
 - **Features**:
   - Graphics rendering on hardware.
