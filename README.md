@@ -8,6 +8,7 @@ This repository is a collection of advanced technical projects demonstrating exp
   - [Linux Kernel with Multi-Terminal Scheduling](#linux-kernel-with-multi-terminal-scheduling)
   - [Hardware-Based Game in SystemVerilog](#hardware-based-game-in-systemverilog)
   - [Global Crypto Market Data Extraction](#global-crypto-market-data-extraction)
+  - [Artificial Intelligence Course Projects](#artificial-intelligence-course-projects)
 - [File Structure](#file-structure)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -51,6 +52,14 @@ This repository is a collection of advanced technical projects demonstrating exp
   - Public-facing front-end built with React and JavaScript for visualizing live and historical data.
 - **Technologies**: C, C++, Python, JavaScript, React, AWS (S3, RDS, DynamoDB, Kinesis), WebSockets.
 
+### Artificial Intelligence Course Projects (CS 440)
+- **Description**: A suite of academic projects implementing core AI concepts including search, planning, probabilistic reasoning, regression, and deep learning.
+- **Features**:
+  - Focus on foundational AI topics such as MDPs, Naive Bayes, linear regression, and neural networks.
+  - Projects coded from scratch to reflect core understanding of algorithms and statistical modeling.
+  - Deep learning components implemented with PyTorch and NumPy.
+- **Technologies**: Python, NumPy, PyTorch, scikit-learn.
+
 ## File Structure
 ```
 
@@ -68,6 +77,9 @@ showcase-repo/
 │   ├── Backend/           # C and Python-based data collection modules
 │   ├── Frontend/          # React front-end for data display
 │   └── docs/              # Project architecture, diagrams, and process notes
+├── ece448-ai-projects/      # Artificial Intelligence Course Projects
+│   ├── src/               # Source code (regression, classification, planning, neural nets)
+│   └── docs/              # Descriptions and notes per project
 └── README.md               # This file
 
 ```
@@ -78,12 +90,14 @@ Each project has unique setup requirements:
 2. **Linux Kernel**: Needs a Linux environment, GCC, and QEMU for x86 emulation.
 3. **Hardware Game**: Requires an FPGA board (e.g., DE10-Nano) and Quartus or Vivado for synthesis.
 4. **Crypto Market Data**: Requires WSL or Linux, libwebsockets, AWS credentials, and Node.js for the front end.
+5. **AI Projects**: Requires Python 3, NumPy, PyTorch, and optionally scikit-learn for ML-based assignments.
 
 ## Usage
 - **RISC-V Processor**: Run simulations or synthesize to test processor performance with provided test benches.
 - **Linux Kernel**: Compile and boot in QEMU to interact with the custom OS and terminals.
 - **Hardware Game**: Deploy to an FPGA to play the game via hardware inputs and display.
 - **Crypto Market Data**: Launch backend collectors with C or Python, store and stream data to AWS, and access the public UI via browser.
+- **AI Projects**: Run individual scripts for model training, evaluation, or planning depending on the assignment context.
 
 Refer to each project’s `docs/` folder for detailed usage instructions.
 
@@ -94,6 +108,7 @@ Refer to each project’s `docs/` folder for detailed usage instructions.
 - Real-time network programming and data collection (C, WebSockets).
 - Cloud infrastructure and serverless architecture (AWS).
 - Front-end development and data visualization (React, JavaScript).
+- Machine learning, inference, and deep learning (Python, PyTorch, NumPy).
 
 ## Contributing
 This repository is a personal showcase and not actively seeking contributions. However, feedback or collaboration inquiries are welcome via email or GitHub Issues.
