@@ -64,23 +64,17 @@ This repository is a collection of advanced technical projects demonstrating exp
 ```
 
 showcase-repo/
-├── riscv-processor/         # Out-of-Order RISC-V Processor
-│   ├── src/                # Source files (RISC-V assembly, simulation scripts)
-│   └── docs/               # Documentation and design notes
-├── linux-kernel/           # Linux Kernel Project
-│   ├── src/                # Source files (C, x86 assembly)
-│   └── docs/               # Kernel documentation
-├── hardware-game/          # SystemVerilog Game
-│   ├── src/                # Source files (SystemVerilog)
-│   └── docs/               # Hardware design specs
-├── ie497-crypto-data/      # Global Crypto Market Data Extraction
-│   ├── Backend/           # C and Python-based data collection modules
-│   ├── Frontend/          # React front-end for data display
-│   └── docs/              # Project architecture, diagrams, and process notes
-├── ece448-ai-projects/      # Artificial Intelligence Course Projects
-│   ├── src/               # Source code (regression, classification, planning, neural nets)
-│   └── docs/              # Descriptions and notes per project
-└── README.md               # This file
+├── fall2023/               # ECE 385 Project
+│   └── ece385-finalproject/
+├── fall2024/               # ECE 411 Project
+│   └── fa24_ece411_oreos-main/
+├── spring2024/             # ECE 391 Project
+│   └── ece391/
+├── spring2025/             # ECE 448 Project
+│   └── ece448/
+├── summer2025/             # IE 497 Project
+│   └── Global-Crypto-Market-Continuous-Data-Extraction/
+└── README.md               # Project showcase documentation
 
 ```
 
