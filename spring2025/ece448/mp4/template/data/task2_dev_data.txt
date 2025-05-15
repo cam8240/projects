@@ -1,0 +1,20 @@
+the noun in the happily swims cat is cat
+the verb in the string paints cat strongly is paints
+the verb in the string quickly programs capybara is programs
+the adverb in the string of words capybara programs strongly is strongly
+the adverb in the string swims quickly capybara is quickly
+the adverb in the swims happily capybara is happily
+the noun in the string capybara strongly programs is capybara
+in the string of paints happily capybara the noun is capybara
+in the string strongly programs capybara the verb is programs
+the verb in the capybara quickly programs is programs
+in the dog happily swims the noun is dog
+in the string cat happily swims the noun is cat
+the noun in the swims dog quickly is dog
+in the string happily cat swims the noun is cat
+the adverb in paints cat strongly is strongly
+the noun in the string happily paints capybara is capybara
+in the programs dog quickly the noun is dog
+in the string paints happily cat the noun is cat
+in the string of words capybara strongly swims the noun is capybara
+in the string of quickly swims dog the noun is dog
