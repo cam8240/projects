@@ -4,9 +4,10 @@ This repository is a collection of advanced technical projects demonstrating exp
 
 ## Table of Contents
 - [Projects](#projects)
-  - [Out-of-Order RISC-V Processor](#out-of-order-risc-v-processor)
+  - [Out-of-Order RISC-V Processor](#out-of-order-riscv-processor)
   - [Linux Kernel with Multi-Terminal Scheduling](#linux-kernel-with-multi-terminal-scheduling)
   - [Hardware-Based Game in SystemVerilog](#hardware-based-game-in-systemverilog)
+  - [Global Crypto Market Data Extraction](#global-crypto-market-data-extraction)
 - [File Structure](#file-structure)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -41,8 +42,18 @@ This repository is a collection of advanced technical projects demonstrating exp
   - Multiple levels with obstacles for dynamic gameplay.
 - **Technologies**: SystemVerilog, FPGA tools.
 
+### Global Crypto Market Data Extraction (IE 497)
+- **Description**: Built a real-time crypto market data pipeline with hardware timestamping and cloud integration for public access and visualization.
+- **Features**:
+  - Real-time data collection from multiple exchanges using WebSockets.
+  - Hardware-level timestamping for high-frequency data accuracy.
+  - AWS-hosted infrastructure using S3, DynamoDB, Kinesis, and CloudFront.
+  - Public-facing front-end built with React and JavaScript for visualizing live and historical data.
+- **Technologies**: C, C++, Python, JavaScript, React, AWS (S3, RDS, DynamoDB, Kinesis), WebSockets.
+
 ## File Structure
 ```
+
 showcase-repo/
 ├── riscv-processor/         # Out-of-Order RISC-V Processor
 │   ├── src/                # Source files (RISC-V assembly, simulation scripts)
@@ -53,7 +64,12 @@ showcase-repo/
 ├── hardware-game/          # SystemVerilog Game
 │   ├── src/                # Source files (SystemVerilog)
 │   └── docs/               # Hardware design specs
+├── ie497-crypto-data/      # Global Crypto Market Data Extraction
+│   ├── Backend/           # C and Python-based data collection modules
+│   ├── Frontend/          # React front-end for data display
+│   └── docs/              # Project architecture, diagrams, and process notes
 └── README.md               # This file
+
 ```
 
 ## Installation
@@ -61,11 +77,13 @@ Each project has unique setup requirements:
 1. **RISC-V Processor**: Requires a RISC-V simulator (e.g., RARS or Spike) or FPGA tools for synthesis.
 2. **Linux Kernel**: Needs a Linux environment, GCC, and QEMU for x86 emulation.
 3. **Hardware Game**: Requires an FPGA board (e.g., DE10-Nano) and Quartus or Vivado for synthesis.
+4. **Crypto Market Data**: Requires WSL or Linux, libwebsockets, AWS credentials, and Node.js for the front end.
 
 ## Usage
 - **RISC-V Processor**: Run simulations or synthesize to test processor performance with provided test benches.
 - **Linux Kernel**: Compile and boot in QEMU to interact with the custom OS and terminals.
 - **Hardware Game**: Deploy to an FPGA to play the game via hardware inputs and display.
+- **Crypto Market Data**: Launch backend collectors with C or Python, store and stream data to AWS, and access the public UI via browser.
 
 Refer to each project’s `docs/` folder for detailed usage instructions.
 
@@ -73,7 +91,9 @@ Refer to each project’s `docs/` folder for detailed usage instructions.
 - Processor architecture and optimization (RISC-V).
 - Operating system design and kernel programming (C, x86).
 - Hardware description languages and FPGA development (SystemVerilog).
-- Low-level programming and system integration.
+- Real-time network programming and data collection (C, WebSockets).
+- Cloud infrastructure and serverless architecture (AWS).
+- Front-end development and data visualization (React, JavaScript).
 
 ## Contributing
 This repository is a personal showcase and not actively seeking contributions. However, feedback or collaboration inquiries are welcome via email or GitHub Issues.
