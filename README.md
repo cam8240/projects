@@ -93,7 +93,7 @@ Each project has unique setup requirements:
 - **Crypto Market Data**: Launch backend collectors with C or Python, store and stream data to AWS, and access the public UI via browser.
 - **AI Projects**: Run individual scripts for model training, evaluation, or planning depending on the assignment context.
 
-Refer to each project’s `docs/` folder for detailed usage instructions.
+Refer to each project’s `README` for detailed usage instructions where applicable.
 
 ## Skills Demonstrated
 - Processor architecture and optimization (RISC-V).
