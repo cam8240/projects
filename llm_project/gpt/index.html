@@ -36,49 +36,49 @@
     }
 
     #chat {
-    width: 100%;
-    max-width: 800px;
-    height: 65vh;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    border-radius: 16px;
-    align-self: center;
+      width: 100%;
+      max-width: 800px;
+      height: 65vh;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      border-radius: 16px;
+      align-self: center;
     }
 
     .bubble {
-    background-color: #333;
-    padding: 0.1rem 1rem;
-    border-radius: 20px;
-    max-width: 80%;
-    line-height: 1.4;
-    position: relative;
-    white-space: normal;
-    word-break: break-word;
+      background-color: #333;
+      padding: 0.1rem 1rem;
+      border-radius: 20px;
+      max-width: 80%;
+      line-height: 1.4;
+      position: relative;
+      white-space: normal;
+      word-break: break-word;
     }
 
     .bubble p {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
 
     .user {
-    align-self: flex-end;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      align-self: flex-end;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .assistant {
-    align-self: flex-start;
-    background-color: transparent;
-    padding: 0;
-    border-radius: 0;
-    text-align: left;
+      align-self: flex-start;
+      background-color: transparent;
+      padding: 0;
+      border-radius: 0;
+      text-align: left;
     }
 
     pre {
@@ -95,36 +95,41 @@
     }
 
     footer {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 2rem;
-    background-color: #2d2d2d;
-    padding: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    border-top: 1px solid #444;
-    border-radius: 12px;
-    align-self: center;
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 2rem;
+      background-color: #2d2d2d;
+      padding: 1rem;
+      display: flex;
+      border-top: 1px solid #444;
+      border-radius: 12px;
+      align-self: center;
+    }
+
+    form {
+      flex: 1;
+      display: flex;
+      gap: 0.5rem;
     }
 
     input {
-    flex: 1;
-    padding: 0.75rem;
-    background-color: #333;
-    color: #f0f0f0;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
+      flex: 1;
+      padding: 0.75rem;
+      background-color: #333;
+      color: #f0f0f0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
     }
 
     button {
-    background-color: white;
-    color: #000;
-    padding: 0 1rem;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+      background-color: white;
+      color: #000;
+      padding: 0 1rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
     }
 
     button:hover {
@@ -145,45 +150,45 @@
     }
 
     .bubble table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0.5rem 0;
-    font-size: 0.95rem;
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
     }
 
     .bubble th, .bubble td {
-    border: 1px solid #555;
-    padding: 0.5rem;
-    text-align: left;
+      border: 1px solid #555;
+      padding: 0.5rem;
+      text-align: left;
     }
 
     .bubble th {
-    background-color: #2f2f2f;
-    font-weight: bold;
+      background-color: #2f2f2f;
+      font-weight: bold;
     }
 
     .bubble p code,
     .bubble li code {
-    background-color: #2a2a2a;
-    color: #9cdcfe;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-size: 0.95rem;
-    font-family: monospace;
+      background-color: #2a2a2a;
+      color: #9cdcfe;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      font-family: monospace;
     }
 
     .bubble pre {
-    background-color: #2d2d2d;
-    padding: 1em;
-    border-radius: 6px;
-    overflow-x: auto;
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-    line-height: 1.5;
+      background-color: #2d2d2d;
+      padding: 1em;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+      line-height: 1.5;
     }
 
     .bubble pre code {
-    font-family: monospace;
+      font-family: monospace;
     }
   </style>
 </head>
@@ -201,8 +206,10 @@
   <div id="chat"></div>
 
   <footer>
-    <input id="msg" placeholder="Type your message..." autofocus />
-    <button onclick="send()">➤</button>
+    <form onsubmit="send(event)">
+      <input id="msg" placeholder="Type your message..." autofocus />
+      <button type="submit">➤</button>
+    </form>
   </footer>
 
   <script>
@@ -215,12 +222,13 @@
       const container = document.createElement("div");
       container.className = `bubble ${role}`;
       container.innerHTML = marked.parse(content);
-
       chat.appendChild(container);
       chat.scrollTop = chat.scrollHeight;
     }
 
-    function send() {
+    function send(event) {
+      if (event) event.preventDefault();
+
       const message = msgInput.value.trim();
       if (!message) return;
 
@@ -233,21 +241,20 @@
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message, mode, session_id })
       })
-        .then(res => res.json())
-        .then(data => {
+      .then(res => res.json())
+      .then(data => {
+        if (data.reply) {
           addMessage(data.reply, "assistant");
-        })
-        .catch(err => {
-          addMessage("Error: " + err.message, "assistant");
-        });
+        } else if (data.error) {
+          addMessage("Server Error: " + data.error, "assistant");
+        } else {
+          addMessage("Unknown error occurred.", "assistant");
+        }
+      })
+      .catch(err => {
+        addMessage("Fetch failed: " + err.message, "assistant");
+      });
     }
-
-    msgInput.addEventListener("keydown", function (e) {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        send();
-      }
-    });
   </script>
 </body>
 </html>

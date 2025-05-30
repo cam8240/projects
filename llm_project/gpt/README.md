@@ -23,6 +23,12 @@ The project consists of:
 * `index.html`: Front-end UI with Markdown rendering and syntax highlighting
 * `ask.sh`: Bash script for terminal-based interaction via cURL.
 
+Run:
+* 1. 'python3 ./init_db.py'
+* 2. 'python3 ./app.py'
+* 3. 'python3 -m http.server'
+* 4. 'http://localhost:8000/index.html'
+
 ## Purpose
 
 This project demonstrates the ability to integrate third-party LLM services into a secure, functional web app. It highlights practical skills in API handling, session management, front-end markup rendering, and interface design. It also reflects backend reliability concerns through rate limiting and secure credential management.
