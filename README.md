@@ -9,6 +9,7 @@ This repository is a collection of advanced technical projects demonstrating exp
   - [Hardware-Based Game in SystemVerilog](#hardware-based-game-in-systemverilog)
   - [Global Crypto Market Data Extraction](#global-crypto-market-data-extraction)
   - [Artificial Intelligence Course Projects](#artificial-intelligence-course-projects)
+  - [LLM Chat Assistant](#llm-chat-assistant)
 - [File Structure](#file-structure)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -60,6 +61,15 @@ This repository is a collection of advanced technical projects demonstrating exp
   - Deep learning components implemented with PyTorch and NumPy.
 - **Technologies**: Python, NumPy, PyTorch, scikit-learn.
 
+### LLM Chat Assistant (Independent Project)
+- **Description**: Developed a full-stack local chatbot app powered by OpenAI’s API, with session-based memory, personality control, and markdown + code rendering in a browser.
+- **Features**:
+  - Flask-based backend with OpenAI integration and rate limiting.
+  - Secure API key handling via environment variables.
+  - Markdown rendering with syntax highlighting, support for tables, SQL queries, and formatted code blocks.
+  - Bash terminal client and web UI with dark mode and enter-to-send chat input.
+- **Technologies**: Python, Flask, OpenAI API, Bash, JavaScript, HTML/CSS, SQL, Flask-Limiter, Flask-CORS, Marked.js, highlight.js
+
 ## File Structure
 ```
 
@@ -67,13 +77,15 @@ showcase-repo/
 ├── fall2023/               # ECE 385 Project
 │   └── ece385-finalproject/
 ├── fall2024/               # ECE 411 Project
-│   └── fa24_ece411_oreos-main/
+│   └── fa24\_ece411\_oreos-main/
 ├── spring2024/             # ECE 391 Project
 │   └── ece391/
 ├── spring2025/             # ECE 448 Project
 │   └── ece448/
 ├── summer2025/             # IE 497 Project
 │   └── Global-Crypto-Market-Continuous-Data-Extraction/
+├── llm/                    # Independent LLM project
+│   ├── gpt
 └── README.md               # Project showcase documentation
 
 ```
@@ -85,6 +97,7 @@ Each project has unique setup requirements:
 3. **Hardware Game**: Requires an FPGA board (e.g., DE10-Nano) and Quartus or Vivado for synthesis.
 4. **Crypto Market Data**: Requires WSL or Linux, libwebsockets, AWS credentials, and Node.js for the front end.
 5. **AI Projects**: Requires Python 3, NumPy, PyTorch, and optionally scikit-learn for ML-based assignments.
+6. **LLM Chat**: Requires Python 3, `flask`, `openai`, `flask-cors`, `flask-limiter`, `dotenv`, and optionally a bash-compatible terminal.
 
 ## Usage
 - **RISC-V Processor**: Run simulations or synthesize to test processor performance with provided test benches.
@@ -92,6 +105,7 @@ Each project has unique setup requirements:
 - **Hardware Game**: Deploy to an FPGA to play the game via hardware inputs and display.
 - **Crypto Market Data**: Launch backend collectors with C or Python, store and stream data to AWS, and access the public UI via browser.
 - **AI Projects**: Run individual scripts for model training, evaluation, or planning depending on the assignment context.
+- **LLM Chat**: Start Flask backend and interact via terminal (`ask.sh`) or browser (`index.html`).
 
 Refer to each project’s `README` for detailed usage instructions where applicable.
 
@@ -101,7 +115,8 @@ Refer to each project’s `README` for detailed usage instructions where applica
 - Hardware description languages and FPGA development (SystemVerilog).
 - Real-time network programming and data collection (C, WebSockets).
 - Cloud infrastructure and serverless architecture (AWS).
-- Front-end development and data visualization (React, JavaScript).
+- Full-stack LLM app development (Flask, JavaScript, OpenAI API, SQL).
+- Front-end development and data visualization (React, JavaScript, Markdown).
 - Machine learning, inference, and deep learning (Python, PyTorch, NumPy).
 
 ## Contributing
