@@ -68,7 +68,8 @@ This repository is a collection of advanced technical projects demonstrating exp
   - Secure API key handling via environment variables.
   - Markdown rendering with syntax highlighting, support for tables, SQL queries, and formatted code blocks.
   - Bash terminal client and web UI with dark mode and enter-to-send chat input.
-- **Technologies**: Python, Flask, OpenAI API, Bash, JavaScript, HTML/CSS, SQL
+  - Integrated Go microservice for auxiliary text analysis (e.g., word count).
+- **Technologies**: Python, Flask, OpenAI API, Bash, JavaScript, HTML/CSS, PostgreSQL, Go
 
 ## File Structure
 ```
