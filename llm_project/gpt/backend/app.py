@@ -10,13 +10,13 @@ from datetime import datetime
 import requests
 
 # Load environment variables from key.env
-load_dotenv("key.env")
+load_dotenv(".env")
 client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Flask app setup
 app = Flask(__name__)
 CORS(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://chatuser:securepassword@localhost/chatdb'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 limiter = Limiter(get_remote_address, app=app, default_limits=["20 per minute"])
@@ -41,7 +41,7 @@ prompt_modes = {
 
 def analyze_with_go_service(text):
     try:
-        res = requests.post("http://localhost:6000/analyze", json={"text": text}, timeout=2)
+        res = requests.post("http://analyzer:6000/analyze", json={"text": text}, timeout=2)
         if res.status_code == 200:
             return res.json()
         return {"error": f"Go service error: {res.status_code}"}
@@ -111,4 +111,6 @@ def get_history(session_id):
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()
     app.run(debug=True, host="0.0.0.0")

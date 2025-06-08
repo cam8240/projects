@@ -1,0 +1,41 @@
+version: '3.9'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    depends_on:
+      - db
+      - analyzer
+    environment:
+      - DATABASE_URL=postgresql://chatuser:securepassword@db/chatdb
+
+  analyzer:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.analyzer
+    ports:
+      - "6000:6000"
+
+  db:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_DB: chatdb
+      POSTGRES_USER: chatuser
+      POSTGRES_PASSWORD: securepassword
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
