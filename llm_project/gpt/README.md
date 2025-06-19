@@ -1,21 +1,39 @@
 # LLM Chat Assistant – Independent Project
 
-This directory contains a full-stack conversational AI assistant built using OpenAI's API. The project showcases back-end Flask development, front-end rendering with markdown and code highlighting, and integration of rate limiting, CORS, PostgreSQL, and a Go-based microservice. It is designed as a locally hosted application with a browser interface, CLI support, and full Docker containerization.
+This directory contains a full-stack conversational AI assistant built using OpenAI's API.  
+The stack now includes **three clients**:
+
+| Client | Tech | Purpose |
+|--------|------|---------|
+| **Vue Web** | Vue + Nginx | Browser-based UI |
+| **CLI** | Bash | Quick terminal access |
+| **Java Desktop** | Java 17 + JavaFX | Stand-alone desktop UI |
+
+All clients share the same Flask back-end, PostgreSQL storage, and Go / Java services, and everything is containerised with Docker Compose.
+
+---
 
 ## Overview
 
-The assistant supports multiple interaction modes—"friendly," "tutor," and "coder"—allowing dynamic personality control via system prompts. The UI is rendered in dark mode, and responses are formatted to handle code, tables, and inline markdown cleanly. Sessions are logged to a PostgreSQL database and analyzed via a Go microservice, all running in Docker containers.
+The assistant supports multiple interaction modes—“friendly,” “tutor,” and “coder”—allowing dynamic personality control via system prompts.  
+Sessions are logged to PostgreSQL and analysed by a Go microservice; longer-running tasks can be off-loaded to the new Java desktop client.  
+The web UI renders dark-mode markdown; the JavaFX client provides a native-window alternative.
+
+---
 
 ## Features
 
 * Flask back-end with RESTful `/chat` and `/history/<session_id>` endpoints.
+* **JavaFX desktop client** (`desktop-client/`) with chat window, local message cache, and OpenAI calls via HTTP.
 * OpenAI API integration (GPT-4.1-nano).
-* PostgreSQL session logging using SQLAlchemy.
-* Rate limiting with Flask-Limiter.
-* Markdown and syntax-highlighted UI.
-* Go microservice (`analyzer.go`) for word and character analysis.
+* PostgreSQL session logging with SQLAlchemy.
+* Rate limiting via Flask-Limiter.
+* Markdown and syntax-highlighted web UI.
+* Go microservice (`analyzer.go`) for word / character analytics.
 * Docker-based full-stack orchestration.
-* Bash script for CLI-based interaction.
+* Bash script for CLI interaction.
+
+---
 
 ## Structure
 
@@ -23,101 +41,106 @@ The assistant supports multiple interaction modes—"friendly," "tutor," and "co
 
 .
 ├── backend/
-│   ├── app.py               # Flask app
-│   ├── analyzer.go          # Go microservice
-│   ├── Dockerfile           # Flask Dockerfile
-│   ├── Dockerfile.analyzer  # Go service Dockerfile
-│   ├── requirements.txt     # Python dependencies
-│   └── instance/chat.db     # Local DB file (if SQLite used initially)
+│   ├── app.py
+│   ├── analyzer.go
+│   ├── Dockerfile
+│   ├── Dockerfile.analyzer
+│   ├── requirements.txt
+│   └── instance/chat.db
 │
 ├── frontend/
-│   ├── Dockerfile           # Vue/Nginx container
-│   └── \[Vue App Files]      # Vue project output
+│   ├── Dockerfile
+│   └── \[Vue App Files]
 │
-├── .env                     # OpenAI key + DB credentials
-├── docker-compose.yml       # Full stack orchestration
-├── ask.sh                   # CLI utility for chat
+├── desktop-client/
+│   ├── src/
+│   ├── pom.xml          # Maven dependencies
+│   ├── Dockerfile       # Optional Java image
+│   └── README.md        # Local run instructions
+│
+├── .env
+├── docker-compose.yml
+├── ask.sh
 └── README.md
 
 ````
 
+---
+
 ## Running with Docker
 
-Build and start everything using:
+Build and start **all containers (web UI, back-end, Go analyser, Postgres)**:
 
 ```bash
 docker-compose up --build
 ````
 
-Or run detached (in background):
+Run detached:
 
 ```bash
 docker-compose up -d
 ```
 
-To stop all containers:
+Stop:
 
 ```bash
 docker-compose down
 ```
 
-To rebuild a specific service:
+### Rebuilding a single service
 
 ```bash
 docker-compose build frontend
 docker-compose build backend
+docker-compose build desktop-client
 ```
 
-To view logs from a service:
+### Logs
 
 ```bash
 docker-compose logs backend
-docker-compose logs frontend
+docker-compose logs desktop-client
 ```
 
-To open a shell inside the backend container:
+---
+
+## Running the Java Desktop Client Locally
+
+> Requires JDK 17 + Maven 3.8+
 
 ```bash
-docker exec -it <container_name_or_id> /bin/sh
+cd desktop-client
+mvn clean javafx:run          # launches JavaFX chat window
 ```
+
+To package a runnable JAR:
+
+```bash
+mvn clean package
+java -jar target/desktop-client-1.0.0.jar
+```
+
+---
 
 ## Vue Development with Hot Reload
 
-To test the Vue frontend with hot module replacement (HMR), run it locally (outside Docker):
-
-1. Navigate to the frontend directory:
-
 ```bash
 cd frontend
-```
-
-2. Install dependencies:
-
-```bash
 npm install
+npm run dev    # http://localhost:5173
 ```
 
-3. Start the dev server (instant-refresh):
+Ensure the Flask back-end (`localhost:5000`) has CORS enabled for local dev.
 
-```bash
-npm run dev
-```
-
-The app will be live at [http://localhost:5173](http://localhost:5173), with full hot reload for component updates.
-
-Make sure your Flask backend at `localhost:5000` has CORS enabled for local dev.
+---
 
 ## Viewing Messages with `curl`
-
-To see message history for a session:
 
 ```bash
 curl http://localhost:5000/history/default
 ```
 
-To list all session IDs:
-
-Add this temporary route to `app.py`:
+To list session IDs (temporary route):
 
 ```python
 @app.route("/sessions", methods=["GET"])
@@ -126,16 +149,20 @@ def list_sessions():
     return jsonify([s[0] for s in sessions])
 ```
 
-Then run:
-
 ```bash
 curl http://localhost:5000/sessions
 ```
 
+---
+
 ## Purpose
 
-This project demonstrates the ability to integrate third-party LLM services into a secure, functional web app. It highlights practical skills in API handling, session management, SQL integration, front-end markup rendering, and interface design. The inclusion of a Go microservice showcases microservice architecture and cross-language extensibility.
+This project demonstrates how to embed third-party LLM services in a secure, multi-client application.
+It showcases API handling, session management, cross-language micro-services, and both web & native desktop UIs.
+
+---
 
 ## License
 
-© 2025 Cameron Marchese. All rights reserved. This project is shared for demonstration purposes only. Redistribution of API keys or hosted endpoints is prohibited.
+© 2025 Cameron Marchese. All rights reserved.
+This project is shared for demonstration purposes only; redistribution of API keys or hosted endpoints is prohibited.

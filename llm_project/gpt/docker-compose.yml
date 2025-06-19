@@ -37,5 +37,16 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
+  desktop-client:
+    build:
+      context: ./desktop-client
+      dockerfile: Dockerfile
+    ports:
+      - "7000:7000"
+    depends_on:
+      - db
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
 volumes:
   pgdata:
