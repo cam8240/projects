@@ -84,7 +84,8 @@ This repository is a collection of advanced technical projects demonstrating exp
   * PostgreSQL session logging with SQLAlchemy and rate limiting via Flask-Limiter.
   * A Go-based microservice for auxiliary analysis like word and character counts.
   * Bash script for CLI interaction; Docker Compose setup for full-stack orchestration.
-* **Technologies**: Python, Flask, OpenAI API, JavaScript, Vue, HTML/CSS, PostgreSQL, Go, Bash, Docker.
+  * JavaFX desktop client for native GUI chat access, sharing the same API and session backend.
+* **Technologies**: Python, Java, Flask, OpenAI API, JavaScript, Vue, HTML/CSS, PostgreSQL, Go, Bash, Docker.
 
 ## File Structure
 
@@ -114,7 +115,8 @@ Each project has unique setup requirements:
 3. **Hardware Game**: Requires an FPGA board (e.g., DE10-Nano) and Quartus or Vivado for synthesis.
 4. **Crypto Market Data**: Requires WSL or Linux, libwebsockets, AWS credentials, and Node.js for the front end.
 5. **AI Projects**: Requires Python 3, NumPy, PyTorch, and optionally scikit-learn for ML-based assignments.
-6. **LLM Chat**: Requires Python 3, `flask`, `openai`, `flask-cors`, `flask-limiter`, `dotenv`, and optionally a bash-compatible terminal.
+6. **LLM Chat**: Requires Python 3, `flask`, `openai`, `flask-cors`, `flask-limiter`, `python-dotenv`, and optionally a bash-compatible terminal.  
+   For the desktop client, install JDK 17+, Maven, and JavaFX SDK (or use Docker).
 
 ## Usage
 
@@ -134,7 +136,7 @@ Refer to each project’s `README` for detailed usage instructions where applica
 * Hardware description languages and FPGA development (SystemVerilog).
 * Real-time network programming and data collection (C, WebSockets).
 * Cloud infrastructure and serverless architecture (AWS).
-* Full-stack LLM app development (Flask, JavaScript, OpenAI API, SQL).
+* Full-stack LLM app development (Flask, Java, JavaScript, OpenAI API, SQL).
 * Front-end development and data visualization (React, JavaScript, Markdown).
 * Machine learning, inference, and deep learning (Python, PyTorch, NumPy).
 
