@@ -1,12 +1,12 @@
 # LLM Chat Assistant – Independent Project
 
-This directory contains a full-stack conversational AI assistant built using OpenAI's API.  
+This directory contains a full-stack conversational AI assistant built using OpenAI's API.
 The stack now includes **three clients**:
 
-| Client | Tech | Purpose |
-|--------|------|---------|
-| **Vue Web** | Vue + Nginx | Browser-based UI |
-| **CLI** | Bash | Quick terminal access |
+| Client           | Tech             | Purpose                |
+| ---------------- | ---------------- | ---------------------- |
+| **Vue Web**      | Vue + Nginx      | Browser-based UI       |
+| **CLI**          | Bash             | Quick terminal access  |
 | **Java Desktop** | Java 17 + JavaFX | Stand-alone desktop UI |
 
 All clients share the same Flask back-end, PostgreSQL storage, and Go / Java services, and everything is containerised with Docker Compose.
@@ -15,9 +15,13 @@ All clients share the same Flask back-end, PostgreSQL storage, and Go / Java ser
 
 ## Overview
 
-The assistant supports multiple interaction modes—“friendly,” “tutor,” and “coder”—allowing dynamic personality control via system prompts.  
-Sessions are logged to PostgreSQL and analysed by a Go microservice; longer-running tasks can be off-loaded to the new Java desktop client.  
+The assistant supports multiple interaction modes—“friendly,” “tutor,” and “coder”—allowing dynamic personality control via system prompts.
+Sessions are logged to PostgreSQL and analysed by a Go microservice; longer-running tasks can be off-loaded to the new Java desktop client.
 The web UI renders dark-mode markdown; the JavaFX client provides a native-window alternative.
+
+The system has also been expanded with an interactive `/coach` page:
+Users can stream live microphone audio directly to the Flask server (via WebSocket), where it is transcribed using `whisper.cpp`.
+Incoming transcripts are analysed in real-time for pace, filler words, and structure, and GPT generates dynamic coaching tips based on the results.
 
 ---
 
@@ -32,13 +36,13 @@ The web UI renders dark-mode markdown; the JavaFX client provides a native-windo
 * Go microservice (`analyzer.go`) for word / character analytics.
 * Docker-based full-stack orchestration.
 * Bash script for CLI interaction.
+* Vue `/coach` tool with mic access, WebSocket streaming, live transcription via `whisper.cpp`, and feedback generation.
 
 ---
 
 ## Structure
 
 ```
-
 .
 ├── backend/
 │   ├── app.py
@@ -50,7 +54,7 @@ The web UI renders dark-mode markdown; the JavaFX client provides a native-windo
 │
 ├── frontend/
 │   ├── Dockerfile
-│   └── \[Vue App Files]
+│   └── [Vue App Files]
 │
 ├── desktop-client/
 │   ├── src/
@@ -62,8 +66,7 @@ The web UI renders dark-mode markdown; the JavaFX client provides a native-windo
 ├── docker-compose.yml
 ├── ask.sh
 └── README.md
-
-````
+```
 
 ---
 
@@ -73,7 +76,9 @@ Build and start **all containers (web UI, back-end, Go analyser, Postgres)**:
 
 ```bash
 docker-compose up --build
-````
+```
+
+[http://localhost:8080](http://localhost:8080)
 
 Run detached:
 
@@ -110,7 +115,7 @@ docker-compose logs desktop-client
 
 ```bash
 cd desktop-client
-mvn clean javafx:run          # launches JavaFX chat window
+mvn clean javafx:run
 ```
 
 To package a runnable JAR:
@@ -159,6 +164,7 @@ curl http://localhost:5000/sessions
 
 This project demonstrates how to embed third-party LLM services in a secure, multi-client application.
 It showcases API handling, session management, cross-language micro-services, and both web & native desktop UIs.
+New additions show how to process real-time audio via WebSocket and generate feedback using Whisper and GPT together.
 
 ---
 

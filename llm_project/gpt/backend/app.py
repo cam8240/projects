@@ -1,27 +1,34 @@
+import eventlet
+eventlet.monkey_patch()
+
 from flask import Flask, request, jsonify
-import openai
-import os
-from dotenv import load_dotenv
-from flask_limiter import Limiter
-from flask_limiter.util import get_remote_address
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
+from flask_socketio import SocketIO
+from dotenv import load_dotenv
+from whisper_handler import transcribe_audio_chunk
 from datetime import datetime
 import requests
+import openai
+import os
 
-# Load environment variables from key.env
+# --- ENV & API Setup ---
 load_dotenv(".env")
 client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-# Flask app setup
 app = Flask(__name__)
 CORS(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL")
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
 limiter = Limiter(get_remote_address, app=app, default_limits=["20 per minute"])
 
-# Database model
+# --- Database Config ---
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+db = SQLAlchemy(app)
+
+# --- Models ---
 class ChatLog(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     session_id = db.Column(db.String(100))
@@ -29,10 +36,8 @@ class ChatLog(db.Model):
     message = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
 
-# In-memory chat history for simplicity
+# --- Chat Mode Prompts ---
 session_history = {}
-
-# Prompt modes
 prompt_modes = {
     "friendly": "You are a friendly and casual assistant.",
     "tutor": "You are a professional tutor who explains clearly.",
@@ -42,13 +47,11 @@ prompt_modes = {
 def analyze_with_go_service(text):
     try:
         res = requests.post("http://analyzer:6000/analyze", json={"text": text}, timeout=2)
-        if res.status_code == 200:
-            return res.json()
-        return {"error": f"Go service error: {res.status_code}"}
+        return res.json() if res.status_code == 200 else {"error": f"Go service error: {res.status_code}"}
     except Exception as e:
         return {"error": str(e)}
-    
 
+# --- REST ENDPOINTS ---
 @app.route("/chat", methods=["POST"])
 @limiter.limit("5 per minute")
 def chat():
@@ -73,7 +76,6 @@ def chat():
         session_history[session_id].append({"role": "user", "content": user_message})
         db.session.add(ChatLog(session_id=session_id, role="user", message=user_message))
 
-        # Analyze with Go microservice
         go_analysis = analyze_with_go_service(user_message)
         print("Go analysis:", go_analysis)
 
@@ -87,13 +89,10 @@ def chat():
 
         db.session.commit()
         return jsonify({"reply": reply})
-
     except Exception as e:
-        import traceback
-        traceback.print_exc()
         db.session.rollback()
         return jsonify({"error": str(e)}), 500
-    
+
 @app.route("/history/<session_id>", methods=["GET"])
 def get_history(session_id):
     try:
@@ -110,7 +109,34 @@ def get_history(session_id):
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route("/interview/stream", methods=["POST"])
+def handle_audio_stream():
+    try:
+        raw_audio = request.data
+        result = transcribe_audio_chunk(raw_audio)
+        return jsonify({"transcript": result})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+# --- SOCKET.IO EVENTS ---
+@socketio.on("connect")
+def handle_connect():
+    print("WebSocket client connected")
+
+@socketio.on("disconnect")
+def handle_disconnect():
+    print("WebSocket client disconnected")
+
+@socketio.on("audio_chunk")
+def handle_audio_chunk(data):
+    try:
+        result = transcribe_audio_chunk(data)
+        socketio.emit("transcript", {"text": result})
+    except Exception as e:
+        socketio.emit("error", {"error": str(e)})
+
+# --- APP START ---
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()
-    app.run(debug=True, host="0.0.0.0")
+    socketio.run(app, host="0.0.0.0", port=5000, debug=True)
