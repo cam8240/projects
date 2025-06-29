@@ -1,0 +1,27 @@
+22:09:31 DEBUG : Logs will be stored at 'C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a/IDE.log'.
+22:09:34 INFO  : Platform repository initialization has completed.
+22:09:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\cam82\OneDrive\Documents\College\FA23ECE385\lab62\lab62a\temp_xsdb_launch_script.tcl
+22:09:34 INFO  : Registering command handlers for Vitis TCF services
+22:09:36 INFO  : XSCT server has started successfully.
+22:09:37 INFO  : Successfully done setting XSCT server connection channel  
+22:09:37 INFO  : plnx-install-location is set to ''
+22:09:37 INFO  : Successfully done setting workspace for the tool. 
+22:09:37 INFO  : Successfully done query RDI_DATADIR 
+22:10:08 DEBUG : Logs will be stored at 'C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a/IDE.log'.
+22:10:21 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\cam82\OneDrive\Documents\College\FA23ECE385\lab62\lab62a\temp_xsdb_launch_script.tcl
+22:10:21 INFO  : Registering command handlers for Vitis TCF services
+22:10:21 INFO  : Platform repository initialization has completed.
+22:10:23 INFO  : XSCT server has started successfully.
+22:10:23 INFO  : plnx-install-location is set to ''
+22:10:23 INFO  : Successfully done setting XSCT server connection channel  
+22:10:23 INFO  : Successfully done query RDI_DATADIR 
+22:10:23 INFO  : Successfully done setting workspace for the tool. 
+18:39:28 DEBUG : Logs will be stored at 'C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a/IDE.log'.
+18:39:30 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\cam82\OneDrive\Documents\College\FA23ECE385\lab62\lab62a\temp_xsdb_launch_script.tcl
+18:39:30 INFO  : Registering command handlers for Vitis TCF services
+18:39:30 INFO  : Platform repository initialization has completed.
+18:39:32 INFO  : XSCT server has started successfully.
+18:39:33 INFO  : plnx-install-location is set to ''
+18:39:33 INFO  : Successfully done setting XSCT server connection channel  
+18:39:33 INFO  : Successfully done query RDI_DATADIR 
+18:39:33 INFO  : Successfully done setting workspace for the tool. 

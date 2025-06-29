@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat Assistant</title>
+
+  <!-- Markdown & Syntax Highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>marked.setOptions({ highlight: code => hljs.highlightAuto(code).value });</script>
+
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      padding: 1rem;
+      background-color: #2d2d2d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #444;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    #chat {
+    width: 100%;
+    max-width: 800px;
+    height: 65vh;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    border-radius: 16px;
+    align-self: center;
+    }
+
+    .bubble {
+    background-color: #333;
+    padding: 0.1rem 1rem;
+    border-radius: 20px;
+    max-width: 80%;
+    line-height: 1.4;
+    position: relative;
+    white-space: normal;
+    word-break: break-word;
+    }
+
+    .bubble p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    }
+
+    .user {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .assistant {
+    align-self: flex-start;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    text-align: left;
+    }
+
+    pre {
+      background-color: #2d2d2d;
+      padding: 1em;
+      border-radius: 6px;
+      overflow-x: auto;
+      color: #ddd;
+    }
+
+    code {
+      font-family: monospace;
+      color: #9cdcfe;
+    }
+
+    footer {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    background-color: #2d2d2d;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    border-top: 1px solid #444;
+    border-radius: 12px;
+    align-self: center;
+    }
+
+    input {
+    flex: 1;
+    padding: 0.75rem;
+    background-color: #333;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    }
+
+    button {
+    background-color: white;
+    color: #000;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #eee;
+    }
+
+    select {
+      background-color: #333;
+      color: #f0f0f0;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .top-left-select {
+      margin-left: 0.5rem;
+    }
+
+    .bubble table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    }
+
+    .bubble th, .bubble td {
+    border: 1px solid #555;
+    padding: 0.5rem;
+    text-align: left;
+    }
+
+    .bubble th {
+    background-color: #2f2f2f;
+    font-weight: bold;
+    }
+
+    .bubble p code,
+    .bubble li code {
+    background-color: #2a2a2a;
+    color: #9cdcfe;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-family: monospace;
+    }
+
+    .bubble pre {
+    background-color: #2d2d2d;
+    padding: 1em;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    }
+
+    .bubble pre code {
+    font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chat</h1>
+    <select id="mode" class="top-left-select">
+      <option value="friendly">Friendly</option>
+      <option value="tutor">Tutor</option>
+      <option value="coder">Coder</option>
+    </select>
+  </header>
+
+  <div id="chat"></div>
+
+  <footer>
+    <input id="msg" placeholder="Type your message..." autofocus />
+    <button onclick="send()">➤</button>
+  </footer>
+
+  <script>
+    const chat = document.getElementById("chat");
+    const msgInput = document.getElementById("msg");
+    const modeSelect = document.getElementById("mode");
+    const session_id = "default";
+
+    function addMessage(content, role) {
+      const container = document.createElement("div");
+      container.className = `bubble ${role}`;
+      container.innerHTML = marked.parse(content);
+
+      chat.appendChild(container);
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    function send() {
+      const message = msgInput.value.trim();
+      if (!message) return;
+
+      const mode = modeSelect.value;
+      addMessage(message, "user");
+      msgInput.value = "";
+
+      fetch("http://localhost:5000/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message, mode, session_id })
+      })
+        .then(res => res.json())
+        .then(data => {
+          addMessage(data.reply, "assistant");
+        })
+        .catch(err => {
+          addMessage("Error: " + err.message, "assistant");
+        });
+    }
+
+    msgInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        send();
+      }
+    });
+  </script>
+</body>
+</html>

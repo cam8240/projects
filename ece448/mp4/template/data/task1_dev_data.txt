@@ -1,0 +1,20 @@
+the noun in the happily swims cat is cat
+the adverb in the string of happily cat swims is happily
+in the string happily swims cat the verb is swims
+the noun in happily cat swims is cat
+the noun in the string of swims happily cat is cat
+in the string of words swims cat happily the adverb is happily
+the verb in the string of words swims happily cat is swims
+the adverb in the string of swims cat happily is happily
+the noun in the string of words cat happily swims is cat
+in the string of swims happily cat the noun is cat
+the noun in the string happily cat swims is cat
+the adverb in the string of happily swims cat is happily
+the adverb in the string swims cat happily is happily
+in swims cat happily the verb is swims
+the verb in the string cat happily swims is swims
+the adverb in the string of cat swims happily is happily
+the verb in the string of happily cat swims is swims
+the noun in the string swims cat happily is cat
+the adverb in the string of happily swims cat is happily
+the adverb in the string of cat happily swims is happily

@@ -1,0 +1,7 @@
+../testcode/coremark_im.elf:21.757
+../testcode/additional_testcases/compression_im.elf:19.816
+../testcode/cp3_release_benches/mergesort.c:21.898
+../testcode/cp3_release_benches/fft.c:14.946
+../testcode/cp3_release_benches/aes_sha.c:13.799
+../testcode/ooo_test.s:44.111
+../testcode/dependency_test.s:44.111

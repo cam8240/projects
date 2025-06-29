@@ -1,0 +1,5 @@
+p/x test
+x/2xh $esp
+info registers
+break ece.c:391
+target remote 10.0.2.2:1234

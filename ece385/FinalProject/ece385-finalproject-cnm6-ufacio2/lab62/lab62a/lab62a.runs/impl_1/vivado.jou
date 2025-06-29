@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Dec  7 20:11:10 2023
+# Process ID: 11684
+# Current directory: C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a/lab62a.runs/impl_1
+# Command line: vivado.exe -log mb_usb_hdmi_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mb_usb_hdmi_top.tcl -notrace
+# Log file: C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a/lab62a.runs/impl_1/mb_usb_hdmi_top.vdi
+# Journal file: C:/Users/cam82/OneDrive/Documents/College/FA23ECE385/lab62/lab62a/lab62a.runs/impl_1\vivado.jou
+# Running On: Cameron, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 4, Host memory: 16739 MB
+#-----------------------------------------------------------
+source mb_usb_hdmi_top.tcl -notrace

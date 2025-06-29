@@ -1,0 +1,166 @@
+Checkpoint 2.1:
+Bug 1 (2/1/24):
+- BUG: Incorrect Split Screen and Status Bar Rendering  
+The status bar was not properly displayed across the bottom of the screen. Instead 
+of appearing as a fixed horizontal bar, it flickered and overlapped with the game's 
+main graphics. This issue was because I had the incorrect value in the Line Compare 
+Register (register 0x18), initially set to 0xFF18, causing an incorrect calculation 
+of the split screen position.
+- SOLUTION: Adjust Line Compare Register for Proper Split Screen  
+The Line Compare Register was corrected from 0xFF18 to 0x6B18. This change assures 
+that the split screen for the status bar is correctly positioned at a specific line 
+on the display, eliminating the flickering and overlap with the game's main graphics 
+area. This adjustment allowed the correct rendering of the game's content and the 
+status bar.
+
+Bug 2 (2/5/24):
+- BUG: Incorrect Parameter Order in Vertical Line Drawing Function Call  
+The initial call to (*vert_line_fn)(show_y, x, buf); in the draw_vert_line function 
+I passed show_y as the first argument and x as the second, leading to a confusion 
+between the x-coordinate and the y-coordinate of the line to be drawn.
+- SOLUTION: Correct the Argument Order in Function Call for Accurate Line Drawing  
+By correcting the function call to (*vert_line_fn)(x, show_y, buf), the ` and show_y 
+values are passed in the correct order, aligning with the function's expectation 
+that the first parameter specifies the horizontal position, and the second parameter 
+specifies the vertical offset from the top. This adjustment ensures that vertical 
+lines are drawn at the correct locations on the screen, with x determining the column 
+for the line and show_y being used correctly to adjust the vertical starting point 
+based on the current viewport or scrolling position.
+
+Bug 3 (2/6/24):
+- BUG: Text Not Centering Correctly Due to Incorrect Buffer Index Calculation  
+The initial formula for calculating the index within the buffer for placing text 
+pixels did not correctly center the text on the screen. The calculation int 
+index = starting_index + (row * SCREEN_WIDTH) + (i * FONT_WIDTH) + col; inaccurately 
+positioned text, primarily due to incorrect handling of the starting index and 
+misunderstanding of the VGA mode X memory layout.
+- SOLUTION: Adjust the Buffer Index Calculation for Accurate Text Centering  
+I revised the calculation to accurately reflect the text's position within the VGA 
+Mode X's planar memory layout. The corrected formula should account for the screen 
+width, character width, and the specific layout of a planar graphics system. The 
+correct formula is (starting_index >> 2) + (col % 4 * 1440) + (row * 80) + (i * 2) 
++ (col >> 2) This adjustment ensures that the starting point for text drawing is 
+correctly calculated to center the text, taking into account the length of the string 
+and the width of each character, fixing the centering issue.
+
+Bug 4 (2/6/24):
+- BUG: Inaccurate Calculation of Elapsed Time for Game Status Updates  
+The bug involved an incorrect approach to calculating the elapsed time between events 
+in the game, specifically for updating the status bar with the duration. Due to incorrect 
+placement of the time capture statements around the read operation and  game logic, the 
+calculated duration often did not accurately reflect the actual elapsed time. This 
+discrepancy led to the status bar displaying incorrect information about the time spent 
+on particular game activities.
+- SOLUTION: Precise Time Measurement and Enhanced Duration Calculation for Status Bar Updates  
+To correct the inaccurate elapsed time calculation, the timing of the start_time capture was 
+refined to occur immediately before initiating the read operation, ensuring that the 
+recorded start time accurately reflected the beginning of the level. Also, the end_time is 
+captured immediately after the read operation and right before the execution of the following logic 
+
+
+Checkpoint 2.2:
+Bug 1 (2/14/24):
+- BUG: Screen Refresh Occurring Before Player Update  
+In the game's rendering process, the screen was being refreshed before the player's sprite and 
+associated graphical updates were applied. This incorrect sequence of operations was due to the 
+show_screen() function call being placed before the functions that drew the player's sprite and 
+restored the graphical content. As a result, the player movements and changes did not appear 
+correctly on the screen.
+- SOLUTION: Reorder Rendering Steps for Immediate Visual Update  
+To address this issue,  the show_screen() function call was moved to occur after the player's 
+sprite was drawn and the subsequent graphical content was restored. This change ensured that all 
+updates to the player's position and the surrounding graphics were completed before the screen 
+refresh. 
+
+Bug 2 (2/19/24):
+- BUG: Color Palette Reset on Fruit Collection Due to Static Declaration  
+The issue was in the color palette being declared as a static variable within a function that 
+handled the pallete_RGB. This static declaration meant that the palette was reinitialized to its 
+state every time the function was called, leading to the unintended reset of colors whenever a 
+fruit was collected. This behavior messed up the intended dynamic color changes of the status bar.
+- SOLUTION: Dynamic Color Palette Management by Removal of Static Keyword  
+The solution involved removing the static keyword from the color palette declaration and instead 
+copying the color palette into the current function where it was needed. This change allowed for 
+the palette to be modified dynamically without being reset on calls to the function. This adjustment 
+ensured that the color palette of the maze walls accurately reflected the current game state.
+
+Bug 3 (2/20/24):
+- BUG: Incorrect Text Formatting in Status Bar Update  
+The bug was due to the incorrect use of the conditional operator for handling the singular vs. plural 
+form of "fruit" within the sprintf function call. This led to improper text formatting in the status 
+bar when displaying the fruit count. When the fruit count was exactly one, the status bar was intended
+to show "1 Fruit", without the plural 's'. Due to an error in the conditional logic within the sprintf 
+string, the text either always included the plural 's' or removed it incorrectly causing it to show 
+"1 Fruits" or "0 Fruit".
+- SOLUTION: Correct Conditional Logic for Singular and Plural Forms in Text Formatting  
+To fix the formatting issue, the conditional operator within the sprintf statement was corrected to 
+ensure accurate representation of the singular and plural forms of "fruit". The corrected sprintf 
+line ensures that when the fruit count is one, the status bar correctly displays "1 Fruit", and for 
+all other quantities, it adds the plural 's'.
+
+Bug 4 (2/25/24):
+- BUG: Incorrect Transparent Text Color Palette Settings
+I had a problem with the maze wall colors not updating correctly with each level due to infrequent 
+palette updates. This inconsistency became  noticeable when text overlayed on maze walls, as the 
+expected colors would not match. The core was the game's palette not being updated frequently enough 
+to reflect changes in level design or effects.
+- SOLUTION: Correction of Text Color Palette Settings
+The problem was resolved by introducing a helper function within `mazegame.c` dedicated to updating 
+the palette more frequently, ensuring that the correct colors are always written into the palette. 
+This function is called within the game loop, particularly before rendering operations that depend 
+on changing color representations, such as before drawing the maze walls, player, or text overlays.
+
+Bug 5 (2/26/24):
+- BUG: Application of Fruit Affect with Text Overlay
+When applying a fruit effect, the player and text overlay improperly when the text holds it's 
+place at the top of the screen, with the player either being obscured by the background or the text 
+being unmasked, leading to layering issues. Attempts to adjust the drawing order to ensure proper 
+layering (background, player, text) show an issue in handling transparency or masking within 
+draw_player_block and draw_full_text.
+- SOLUTION: Adjust the rendering order
+To address the bug with layering and transparency issues between the player, text overlay, and 
+background, the solution involves adjusting the rendering order and ensuring transparency or 
+masking is correctly handled. This was done by correcting the order of function calls in mazegame.c
+and making sure the player is rendered right before the screen is shown but before the masking happens
+to place the player on top of masking but below fruit text.
+
+Bug 6 (2/28/24):
+- BUG: Initially, I was uncertain about the purpose of the 6 bytes in the BUFFER_LEDS for controlling 
+LEDs on the Tux controller, leading to confusion about the command buffer's structure. The confusion arose 
+from not comprehending the specific role each byte played in the LED control mechanism. This misunderstanding 
+hindered the effective application of LED effects and control commands.
+- SOLUTION: The 6-byte BUFFER_LEDS structure was designed for LED's on the Tux controller, with each byte 
+ a unique function. The first byte indicates the command type, the second byte acts as an LED mask, and the 
+ subsequent four bytes define the state of each LED. Understanding this allocation clarified the command 
+ buffer's functionality and the number of bytes necessary to allocate.
+
+
+Bug 7 (3/1/24):
+- BUG: Game logic for player masking updates was placed inside the ticks-- loop, leading to inconsistent 
+and delayed updates in player masking relative to player movements and input, causing a laggy gameplay 
+experience.
+- SOLUTION: Move the player masking updates outside of the `ticks--` decrement loop, ensuring they are 
+processed independently of the tick count to maintain consistent and timely updates with player input 
+and movements.
+
+Bug 8 (3/3/24):
+Bug 7:
+- BUG: When displaying elapsed time on LEDs, all 4 LEDs were lit up regardless of the elapsed time, 
+even when it was less than 10 minutes, leading to incorrect visual representation of time based on 
+the demo game requirements.
+- SOLUTION: Implement a conditional check for elapsed time to correctly mask the last LED when the 
+total elapsed time is less than 10 minutes, ensuring only the appropriate LEDs are lit to accurately 
+display the time.
+
+
+Listed above were the major bugs I faced described in detail. One hour plus debug times.
+Other bugs also came up. Additionally there were smaller bugs including:
+- Incorrect understanding of LED bits
+- Overwriting palette sections for maze walls and trnsparent text
+- Needed to add line in input.c to return from while loop and allow command line text to display
+
+- Mismatch of types
+- Incorrect function parameters
+- Incorrect variable names
+- Minor math calculation errors
+- General syntax mistakes like missing ';', '{}', etc.

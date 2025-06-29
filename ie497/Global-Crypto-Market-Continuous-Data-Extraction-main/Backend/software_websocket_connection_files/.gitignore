@@ -1,0 +1,12 @@
+# Ignore compiled object files
+*.o
+
+# Ignore VS Code settings and workspace files
+.vscode/
+
+# Ignore JSON files
+*.json
+*.bson
+
+# Ignore txt files
+*.txt

@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "x86_desc.h": "c",
+        "setjmp.h": "c",
+        "rtc.h": "c",
+        "types.h": "c",
+        "i8259.h": "c",
+        "keyboard.h": "c",
+        "debug.h": "c",
+        "idt.h": "c",
+        "idt_asm.h": "c",
+        "interrupt_asm.h": "c"
+    }
+}

@@ -1,0 +1,294 @@
+Group 3
+
+MP 3.1:
+Bug 1 (3/7/24):
+BUG - GDT incorrectly padded, causing the OS to continue looping even with GDT initialization.
+SOLUTION - Added padding of 16 to correctly align the code for the GDT and remove word padding.
+
+Bug 2 (3/10/24):
+BUG - Test cases not running correctly and cannot be stepped through without causing a crash.
+SOLUTION - The idt needs to be initialized in the kernel, and the line "lidt(idt_desc_ptr);"
+needs to be used to correctly call the idt as well. Test cases then run properly.
+
+Bug 3 (3/11/24):
+BUG - IDT asm linkage file was incorrectly structured and called the vector directly.
+SOLUTION - Rather than call the vector directly the $ needs to be used so the correct 
+vector number is pulled from the list.
+
+Bug 4 (3/16/24):
+BUG - The i8259 files were not working as expected even though the code seemed correct based
+on osdev specifications.
+SOLUTION - Add a mask for the master and slave of 0xFF initially to reset PIC settings.
+
+Bug 5 (3/16/24):
+BUG - After adding the PIC, RTC, and keyboard files the asm file definition was incorrect.
+SOLUTION - There was an issue with the definition of header files, which was fixed by adding
+a .h file to correspond with the .S asm files, allowing for the .h file to be included where
+handlers are used, such as RTC and keyboard.
+
+Bug 6 (3/17/24):
+BUG - Linkage not correctly running for the handler including keyboard and rtc.
+SOLUTION - Resolved by shifting from using a macro in the asm files. Instead, the 
+class standard outlined in the slides was used. The confusion occurred due to
+not understanding how inline assembly, linkage, and regular x86 differ and function.
+
+Bug 7 (3/18/24):
+BUG - Keyboard was not working, and only the double fault was being printed no matter
+the function being run.
+SOLUTION - i8259 was incorrectly working entirely. There was a mixup of the order for
+outb(), which caused all the data to be incorrectly managed. This was flipped to fix.
+
+Bug 8 (3/18/24):
+BUG - RTC was not working correctly, and the rtc_handler was never accessed.
+SOLUTION - i8259 was incorrectly accessing the secondary pic. An offset of 8 needed
+to be added in enable and disable irq so that the rtc could access irq 8.
+
+Bug 9 (3/19/24):
+BUG - Paging accessing incorrect data. Unsure how to correct inline assembly.
+SOLUTION - The inline assembly was the main issue here as registers were not
+set correctly. This mostly needed to understand syntax, such as how
+to end a line and how to access registers in inline asm.
+
+Bug 10 (3/19/24):
+BUG - Test cases show that paging is still not causing a page fault when
+dereferencing a null pointer. This dereference should trigger the page_fault
+exception but test passes.
+SOLUTION - $0x80000001 needs to be used rather than previous attempts of
+0x80000001 or $0x80000000 to enable both paging and protection properly which
+in turn correctly sets CR0. This also needed to be added to 0x00000010 to correctly
+enable 4MB values for CR4. Thinking was memory should be accessed at these locations 
+rather than setting the bits directly.
+
+Bug 11 (3/19/24):
+BUG - Additional test cases showing that accessing null or out of bounds for paging
+does not return a page_fault
+SOLUTION - There was an additional loop causing the page table to be setup incorrectly.
+Additionally, a few flags needed to be added. Refer to paging.c paging_init() comments 
+for details.
+
+-----------------------------------------------------------------------------------------------
+
+MP 3.2:
+Bug 1 (3/20/24):
+BUG - The keyboard has several issues, including backspace not working, space key not working, 
+and caps lock and shift not functioning simultaneously.
+SOLUTION - The array had some problems as keycodes were used for backspace instead of '\b' and 
+escape also needed to be changed to '0'. To fix the caps lock/shift issue logic was adjusted
+to set both flags correctly when pressed simultaneously.
+
+Bug 2 (3/20/24):
+BUG - RTC does not write at different rates, and virtualization seems to be malfunctioning.
+SOLUTION - Adjusted the logic used to count 'flickers' in test case which correspond to rtc
+ticks. This seemed like a pretty simple fix and looks to be working now. Test case shows variable
+rates are possible and virtualization working.
+
+Bug 3 (3/21/24):
+BUG - Terminal is not writing at all. Print statements show that the buffer is accessed correctly, 
+but the write function does not write values to the terminal at all.
+SOLUTION - The incorrect parameters were being used for putc. Instead of using the function 
+terminal_putc(), which is a helper function designed for typing in the terminal, the standard putc()
+is sufficient. 
+
+Bug 4 (3/21/24):
+BUG - Keyboard backspace still not working properly. Seems to be setup correctly in keyboard; however
+terminal does not recognize it.
+SOLUTION - The issue was with how backspace was called. This is where the buffer needed to be updated
+so that backspace correctly adjusts buffer and does a ' ' in reverse in place of the unknown backspace
+key previously being returned. 
+
+Bug 5 (3/21/24):
+BUG - Scrolling does not work. After first scroll any key causes additional scroll. Eventually, scrolling
+causes page faults. Screen scrolls but no keys work.
+SOLUTION - The issue was with how the cursor was being updated. It is necessary to make sure the cursor
+location in hardware gets updated after evey new line, as the program was continuously thinking the cursor
+was at the end of the terminal. This caused the constant returns. Once the buffer was full, the page fault 
+happened.
+
+Bug 6 (3/21/24):
+BUG - Cursor functionality is not working properly and will not update with keypresses.
+SOLUTION - Several fixes here. First, make a new function to update the cursor in hardware using a specific 
+VGA ports found from research. Second, call this function after any keypress to update the cursor location.
+Third, add additional calls to the update_cursor() function in terminal_init and backspace(), as these are 
+special cases.
+
+Bug 7 (3/23/24):
+BUG - When using CTRL+L, the buffer is not reset.
+SOLUTION - To fix this it is necessary to clear the buffer in the terminal_clear function. While working
+on this, the clear() function in lib.c was also modified so that it properly resets the cursor to the top
+of the screen.
+
+Bug 8 (3/23/24):
+BUG - Cannot correctly read the very long text file name as there is an unnecessary character at the end.
+SOLUTION - Needed to adjust the index and name functions in the filesystem to correctly add the null character
+at the end of the buffer and not display an arbitrary character
+
+Bug 9 (3/24/24):
+BUG - Cannot correctly read or check for executable files as test cases. The random characters printing
+are not helpful.
+SOLUTION - Created a test to check for ELF characters at the start of the file and display a printed
+message if those characters are shown based on the document specifications.
+
+Bug 10 (3/24/24):
+BUG - The very long text file name is not printing correctly when running the test case; however it 
+does print correctly when running an actual filesystem function.
+SOLUTION - Needed to build a new character function that doesn't rely on a null terminating character
+to resolve this issue.
+
+Bug 11 (3/24/24):
+BUG - When trying to a new line, backspace will then backspace one too far back to a previous line.
+SOLUTION - There was a missing space when typing characters onto a second line, which was resolved by
+adjusting the keyboard logic to update correctly, therefore fixing the buffer.
+
+-----------------------------------------------------------------------------------------------
+
+MP 3.3:
+Bug 1 (3/26/24):
+BUG - Unable to get jump table to work in syscall asm file. Necessary to support all syscall functions.
+SOLUTION - Needed to define them in the .h and .c files so compiler recognizes them properly. Cannot only
+have them defined in the .h file.
+
+Bug 2 (3/27/24):
+BUG - Issue with being able to access the file data from filesystem code. This is necessary to
+initialize the filesystem for system calls.
+SOLUTION - Expand the filesystem so that it defines read, write, open, and close properly for terminal
+directories, and files. Also make variables global so they can be accessed in syscall.
+
+Bug 3 (3/31/24):
+BUG - Issue with moving bytes 24-27 of the executable files into the EIP register.
+SOLUTION - The EIP register cannot be accessed directly, so we had to move the argument into another 
+and then use a call to modify the EIP.
+
+Bug 4 (3/31/24):
+BUG - Page faulting any time values are attempted to be placed into user space.
+SOLUTION - There was an issue with the paging setup. While most of the paging was correct, the rest of
+the space allocased for pages was not set to blank pages causing page faults because the system thought
+the locations were out of bounds. Rewroked paging based on OSdev instructions.
+
+Bug 5 (4/2/24):
+BUG - Page faulting in execute even though stack is correct.
+SOLUTION - The issue was with a few things. The first syscall asm was not correctly connected to the idt. 
+Additionally, the main issue was actually with the syscall read() function. This function had a NULL pcb_ptr 
+because it was not being updated within the function. New helper function created to do this. Also, all 
+fileops are correctly initialized in filesystem_init now.
+
+Bug 6 (4/2/24):
+BUG - "319OS>" Continuously printing on screen. When inputs are types, they are not outputted.
+SOLUTION - The terminal read/write functions were not fully correct. To fix the contious printing issue, 
+the flag logic needed to be adjusted to wait for the user to press enter (\n) before continuing. To fix the 
+input issue the buffer needed to be cleared properly before writing the new user input to the screen.
+
+Bug 7 (4/3/24):
+BUG - Halt causes page faults when anything is run from shell due to pcb_ptr being zero.
+SOLUTION - Instead of using pcb_ptr use tmp_pcb_ptr to correctly get the updated pcb values. Also, the esp 
+and eip values do not need to be updated inside the halt function as they are not necessary to halt.
+
+-----------------------------------------------------------------------------------------------
+
+MP 3.4:
+Bug 1 (4/4/24):
+BUG - 'cat' does not correctly use terminal_putc and putc to output file contents.
+SOLUTION - There was a large issue with the terminal_putc and putc implementation in relation to terminal
+read/write and keyboard. A misunderstanding of functionality and purpose. Needed to restructure so that 
+terminal_putc handles the keyboard buffer while putc handles any outputs. 
+
+Bug 2 (4/4/24):
+BUG - 'ls' not working correctly and always returns an error. This leads to an issue with grep as well.
+SOLUTION - Small bug with comparision needed to switch nbytes < 33 to nbytes < 33. This fixed all issues.
+
+Bug 3 (4/4/24):
+BUG - 'fish' not working correctly and returns a pagefault after iret.
+SOLUTION - After memory inspection an additional flag to allow read-write needed to be set. Adding this line
+and also correcting the vidmap index fixed the pagefault and allows fish to run.
+
+Bug 4 (4/7/24):
+BUG - 'verylargetextwithverylongname.tx' and 'verylargetextwithverylongname.txt' both work.
+SOLUTION - We need to check the argument length before it is parsed in the command length helper function for
+execution. This way, if the argument is too long, it will immediately return out of the function rather than 
+still trying to read the name, which will end up being correct either way due to how the filesystem is 
+structured.
+
+Bug 5 (4/8/24):
+BUG - When running multiple shells, if another program is run, the curr_pid_val value becomes incorrect.
+SOLUTION - To update correctly, some code in execute and halt to set the needed to be rearranged so the 
+parent_ptr, the curr_pid_val, and ptr are correctly used to update the value of curr_pid_val. curr_pid_val 
+should get the pid value, not the parent_pid value, in execute but should get parent in halt. Also, parent 
+needs to be set first.
+
+-----------------------------------------------------------------------------------------------
+
+MP 3.5:
+Bug 1 (4/15/24):
+BUG - Issue with compilation of added PIT module to handle scheduling.
+SOLUTION - Needed to correctly add to idt wrapper and also initialize in it similar to the initialization
+for the keyboard and rtc drivers.
+
+Bug 2 (4/18/24):
+BUG - Keyboard letters are not displaying on the screen at all as soon as terminal is switched.
+SOLUTION - This issue had a few parts. First of all, the terminal_read flag was never being restored, and this
+was fixed by always resetting the flag in toggle_temrinal before terminal switching. Also, a terminal array 
+needed to be added for the entire terminal.c to allow for basically 3 of all terminal operations to be 
+stored for the expansion to 3 terminals.
+
+Bug 3 (4/18/24):
+BUG - Issue with scrolling, update cursor, putc on initial terminal after addition of multiple terminals.
+Issues were an array of things from not being able to see characters, to scrolling causing page fault, etc.
+SOLUTION - To fix this, consolidated from two functions for cursor updates, scrolling, and characters
+(one in terminal.c and another in lib.c) to only the ones written in temrinal.c as they are more comprehensive
+and account for all cases which fixed the issues.
+
+Bug 4 (4/18/24):
+BUG - Cursor not updating properly when swtiching between terminals. It always resets to the top
+instead of holding its location.
+SOLUTION - Needed to adjust how screen_x and screen_y are updated so they properly are adjusted in lib.c, 
+and then that value is carried to the terminal.c so that they do not get updated only locally. Also 
+needed toupdate the toggle_terminal fuction, which is in charge of the terminal switching to properly 
+store and restore the values for the cursor.
+
+Bug 5 (4/24/24):
+BUG - The program is not starting new shells for each terminal. Right now the pid is always 1 even
+after terminals are switched but they should each have their own shell with seperate pids.
+SOLUTION - Needed to adjust the logic to have the pid start at -1 then update as each terminal is started.
+Additionally added in an array to track the first PID created for each terminal so that each terminal's base
+PID is stored for future use with halt. Now each terminal properly has a shell created.
+
+Bug 6 (4/25/24):
+BUG - It is possible to exit past the base shell and exit other terminals base shells which should not be the
+case as each temrinal should handle its own processes.
+SOLUTION - Created an array to hold the base shell PID for each temrinal and only allow each temrinal to exit
+down to that PID but start any avalible PID so that the base shells are managed seperately while allowing for
+correct free allocation of remaining unused processes.
+
+Bug 7 (4/27/24):
+BUG - There is an issue because not all the base shells launch at the start where the global pcb_ptr and the 
+current and next pcb local values are null in schedule_handler beacuse not all shells are active yet.
+SOLUTION - Created a flag and adjusted the logic so that all the shells start at the beginning and changed how
+pcb_ptr is initialized so it can be casessed by all functions. It now launches shells at the start correctly.
+
+Bug 8 (4/27/24):
+BUG - Running programs still causes a wide range of faults even with scheduling disabled and the terminals
+are not correctly starting/exiting in multiple shells.
+SOLUTION - There were a few things done here. First of all the logic for execute and halt had to be adjusted
+to properly handle all the new cases with multiple terminals running, correctly updating the pid and parent pid
+values. Also some changes needed to be made in the terminal function to correctly access the terminals struct.
+
+Bug 9 (4/28/24):
+BUG - The fish/counter/pingpong run across all terminals when switched rather than staying on their
+seperate terminals and running in the background.
+SOLUTION - This was corrected by making sure execute and halt use the correct values based on the scheduling
+rather than the terminal switching.
+
+Bug 10 (4/28/24):
+BUG - There are a wide range of fault cases with scheduling. Page faults and general protection faults
+occur frequently and no specific cause has been found but it has something to do with the exit and entry 
+of programms probably stemming from the way the PID values are updated.
+SOLUTION - This is due to there being an issue with how the ebp and esp are saved. There are now seperate
+values for ebp and esp in scheduling and in execute/halt.
+
+Bug 11 (4/XX/24):
+BUG - There is an issue with screen_x and screen_y when running scheduled processes on multiple temrinals where
+the cursor does not update properly and changes based on scheduling rather than the current terminal.
+SOLUTION - 
+
+Bug 12 (4/XX/24):
+BUG - There are pagefaults when tabing out of the terminal.
+SOLUTION - 
